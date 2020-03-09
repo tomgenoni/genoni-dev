@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% set description = fm.description | default("The portfolio of Tom Genoni, a frontend designer living in San Francisco.") %}
+{% set ogImage = fm.hero.image | default("me") %}
 
 <html lang="en" class="bg-gray-200">
     <head>
@@ -9,8 +10,15 @@
         <meta name="viewport" content="width=device-width" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="description" content="{{description}}" />
-        <meta property="og:image" content="{{urls.imageKit}}/{{urls.imageKitCode}}/{{fm.hero.image}}.jpg?tr=w-1200,ar-1-1" />
 
+        {# Open Graph #}
+        <meta property="og:title" content="{% if fm.title %}{{fm.title}}{% else %}genoni.dev{% endif %}"/>
+        <meta property="og:description" content="{{description}}"/>
+        <meta property="og:image" content="{{urls.imageKit}}/{{urls.imageKitCode}}/{{ogImage}}.jpg?tr=w-1200,ar-1-1" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="1200" />
+
+        {# Favicon #}
         <link rel="apple-touch-icon" sizes="180x180" href="/asset/image/favicon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/asset/image/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/asset/image/favicon/favicon-16x16.png">
@@ -21,9 +29,11 @@
         <meta name="msapplication-config" content="/asset/image/favicon/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">        
 
+        {# For image service #}
         <link rel="preconnect" href="{{urls.imageKit}}">
         <link rel="dns-prefetch" href="{{urls.imageKit}}">
 
+        {# For image service #}
         <link rel="preload" href="/asset/font/Graphik-Regular-Web.woff2" as="font" crossorigin>
         <link rel="preload" href="/asset/font/Graphik-Medium-Web.woff2" as="font" crossorigin>
 
