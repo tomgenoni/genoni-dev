@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% set description = fm.description | default("The portfolio of Tom Genoni, a frontend designer living in San Francisco.") %}
-{% set ogImage = fm.hero.image | default("me") %}
+{% set ogImage = fm.hero.image | default("tokyo_p-q9MLNaD") %}
 
 <html lang="en" class="bg-gray-200">
     <head>
@@ -17,6 +17,7 @@
         <meta property="og:image" content="{{urls.imageKit}}/{{urls.imageKitCode}}/{{ogImage}}.jpg?tr=w-1200,ar-1-1" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="1200" />
+        <meta property="og:type" content="website" />
 
         {# Favicon #}
         <link rel="apple-touch-icon" sizes="180x180" href="/asset/image/favicon/apple-touch-icon.png">
