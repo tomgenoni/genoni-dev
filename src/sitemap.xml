@@ -1,57 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.atomeye.com/</loc>
+    <loc>https://genoni.dev/</loc>
   </url>
   <url>
-    <loc>https://www.atomeye.com/writing/building-ui-library.html</loc>
+    <loc>https://genoni.dev/write/functional-css.html</loc>
   </url>
   <url>
-    <loc>https://www.atomeye.com/projects/chapter-overview.html</loc>
+    <loc>https://genoni.dev/write/building-genoni-dev.html</loc>
   </url>
   <url>
-    <loc>https://www.atomeye.com/writing/starting-refactor.html</loc>
-  </url>
-  <url>
-    <loc>https://www.atomeye.com/projects/bitbar.html</loc>
-  </url>
-  <url>
-    <loc>https://www.atomeye.com/projects/fetch.html</loc>
-  </url>
-  <url>
-    <loc>https://www.atomeye.com/projects/pattern-library.html</loc>
-  </url>
-  <url>
-    <loc>https://www.atomeye.com/projects/living-style-guide.html</loc>
-  </url>
-  <url>
-    <loc>https://www.atomeye.com/projects/browser-proofer.html</loc>
-  </url>
-  <url>
-    <loc>https://www.atomeye.com/projects/roadee.html</loc>
-  </url>
-  <url>
-    <loc>https://www.atomeye.com/writing/zero.html</loc>
-  </url>
-  <url>
-    <loc>https://www.atomeye.com/writing/flexbox.html</loc>
-  </url>
-  <url>
-    <loc>https://www.atomeye.com/writing/ouroboros.html</loc>
-  </url>
-  <url>
-    <loc>https://www.atomeye.com/writing/atomeye.html</loc>
-  </url>
-  <url>
-    <loc>https://www.atomeye.com/writing/sass.html</loc>
-  </url>
-  <url>
-    <loc>https://www.atomeye.com/writing/inkling.html</loc>
-  </url>
-  <url>
-    <loc>https://www.atomeye.com/about.html</loc>
-  </url>
-  <url>
-    <loc>https://www.atomeye.com/me.html</loc>
+    <loc>https://genoni.dev/write/inkling.html</loc>
   </url>
 </urlset>
