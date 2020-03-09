@@ -1,0 +1,29 @@
+<h2 class="fw5 f4 m_f3 mb4">Write</h2>
+<ul class="m_grid m_grid-wide">
+    {% for post in write %}
+        <li class="m_col-6 {% if not loop.last %}mb3{% endif %}">
+            <a href="/write/{{post.basename}}.html" class="link-inherit db">
+                <div class="flex">
+                    <div class="w4 h4 flex-none mr3">
+                        {{ picture
+                            (
+                                image=post.fm.hero.thumb,
+                                alt=post.fm.hero.alt,
+                                ar="1-1",
+                                class="br1 mb2 stripe-bkg"
+                            )
+                        }}
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="fw5 -mt1 f6 lh-title mb1">
+                            {{post.fm.title}}
+                        </h3>
+                        <div class="f7 black-300 lh-copy">
+                            {{post.fm.description}}
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+    {% endfor %}
+</ul>

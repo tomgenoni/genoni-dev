@@ -1,0 +1,83 @@
+.lh-even {
+    line-height: 1;
+}
+
+.lh-solid {
+    line-height: 1.1;
+}
+
+.lh-title {
+    line-height: 1.25;
+}
+
+.lh-copy {
+    line-height: 1.45;
+}
+
+.lh-base {
+    line-height: 1.6;
+}
+@include respond-above($break__small) {
+    .s_lh-even {
+        line-height: 1;
+    }
+
+    .s_lh-solid {
+        line-height: 1.1;
+    }
+
+    .s_lh-title {
+        line-height: 1.25;
+    }
+
+    .s_lh-copy {
+        line-height: 1.45;
+    }
+    
+    .s_lh-base {
+        line-height: 1.6;
+    }
+}
+@include respond-above($break__medium) {
+    .m_lh-even {
+        line-height: 1;
+    }
+
+    .m_lh-solid {
+        line-height: 1.1;
+    }
+
+    .m_lh-title {
+        line-height: 1.25;
+    }
+
+    .m_lh-copy {
+        line-height: 1.45;
+    }
+    
+    .m_lh-base {
+        line-height: 1.6;
+    }
+}
+@include respond-above($break__large) {
+    .l_lh-even {
+        line-height: 1;
+    }
+
+    .l_lh-solid {
+        line-height: 1.1;
+    }
+
+    .l_lh-title {
+        line-height: 1.25;
+    }
+
+    .l_lh-copy {
+        line-height: 1.45;
+    }
+    
+    .l_lh-base {
+        line-height: 1.6;
+    }
+
+}

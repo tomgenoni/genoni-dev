@@ -1,0 +1,89 @@
+{% macro getPlaceholder(value, breakpoint, name) %}
+    {% set padding = value.split("-")[1] + '/' + value.split("-")[0] + ' * 100%'  %}
+    @media(min-width: {{breakpoint}}px){
+        #image-{{name}} { padding-top: calc({{padding}}); }
+    }
+{% endmacro %}
+
+{% macro getSrcSet(imgVars, image, arFlag) %}
+    {%- for size in imgVars.sizes -%}
+        {{imgVars.server}}{{image}}.jpg?tr=w-{{size}}{{arFlag}} {{size}}w{%- if not loop.last %}, {% endif -%}
+    {%- endfor -%}
+{% endmacro %}
+
+{% macro getSource(ar, breakpoint, image, imgVars) %}
+    {% set arFlag = ',ar-' + ar %}
+
+    <source
+        type="image/jpeg"
+        data-srcset="{{ getSrcSet(imgVars, image, arFlag)}}"
+        media="(min-width: {{breakpoint}}px)"
+    />
+{% endmacro %}
+
+{% macro picture(image, alt, ar, s_ar, m_ar, l_ar, class, placeholder) %}
+
+    {# Image values #}
+    {% set imgVars = {
+        sizes: [120, 320, 400, 640, 768, 1024, 1366, 1600, 1920, 2200, 2800],
+        breakpoints: [481, 641, 981],
+        server: urls.imageKit + "/" + urls.imageKitCode + "/"
+    } %}
+
+    {# Placeholder #}
+
+    <style media="screen">
+        {% if placeholder %}
+            {{ getPlaceholder(placeholder, 0, image) }}
+        {% else %}
+            {% if ar %}
+                {{ getPlaceholder(ar, 0, image) }}
+            {% endif %}
+
+            {%- if s_ar -%}
+                {{ getPlaceholder(s_ar, imgVars.breakpoints[0], image) }}
+            {%- endif -%}
+
+            {%- if m_ar -%}
+                {{ getPlaceholder(m_ar, imgVars.breakpoints[1], image) }}
+            {%- endif -%}
+
+            {%- if l_ar -%}
+                {{ getPlaceholder(l_ar, imgVars.breakpoints[2], image) }}
+            {%- endif -%}
+        {%- endif -%}
+    </style>
+
+    {# Picture #}
+
+    <picture class="overflow-hidden {{class}}">
+
+        {% if l_ar %}
+            {{ getSource(l_ar, imgVars.breakpoints[2], image, imgVars)}}
+        {% endif %}
+
+        {% if m_ar %}
+            {{ getSource(m_ar, imgVars.breakpoints[1], image, imgVars)}}
+        {% endif %}
+
+        {% if s_ar %}
+            {{ getSource(s_ar, imgVars.breakpoints[0], image, imgVars)}}
+        {% endif %}
+
+        {# Set image info #}
+        {% if ar %}
+            {% set arFlag = ',ar-' + ar %}
+        {% endif %}
+
+        <img
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            data-srcset="{{ getSrcSet(imgVars, image, arFlag)}}"
+            data-src="{{imgVars.server}}{{image}}.jpg?tr=w-1024"
+            class="lazyload"
+            data-sizes="auto"
+            alt="{{alt}}"
+            id="image-{{image}}"
+        />
+    </picture>
+
+{% endmacro %}

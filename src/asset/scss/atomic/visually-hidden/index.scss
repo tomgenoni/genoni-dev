@@ -1,0 +1,28 @@
+
+
+
+.visually-hidden {
+    position: fixed;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+@include respond-above($break__small) {
+    .s_visually-hidden {
+        position: fixed;
+        clip: rect(1px, 1px, 1px, 1px);
+    }
+}
+
+@include respond-above($break__medium) {
+    .m_visually-hidden {
+        position: fixed;
+        clip: rect(1px, 1px, 1px, 1px);
+    }
+}
+
+@include respond-above($break__large) {
+    .l_visually-hidden {
+        position: fixed;
+        clip: rect(1px, 1px, 1px, 1px);
+    }
+}

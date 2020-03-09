@@ -1,0 +1,56 @@
+
+
+
+.ws-normal {
+    white-space: normal;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.pre {
+    white-space: pre;
+}
+
+@include respond-above($break__small) {
+    .s_ws-normal {
+        white-space: normal;
+    }
+
+    .s_nowrap {
+        white-space: nowrap;
+    }
+
+    .s_pre {
+        white-space: pre;
+    }
+}
+
+@include respond-above($break__medium) {
+    .m_ws-normal {
+        white-space: normal;
+    }
+
+    .m_nowrap {
+        white-space: nowrap;
+    }
+
+    .m_pre {
+        white-space: pre;
+    }
+}
+
+@include respond-above($break__large) {
+    .l_ws-normal {
+        white-space: normal;
+    }
+
+    .l_nowrap {
+        white-space: nowrap;
+    }
+
+    .l_pre {
+        white-space: pre;
+    }
+}

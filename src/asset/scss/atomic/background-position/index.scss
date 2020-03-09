@@ -1,0 +1,105 @@
+.bg-center {
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg-top {
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.bg-right {
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.bg-bottom {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.bg-left {
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+@include respond-above($break__small) {
+    .s_bg-center {
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .s_bg-top {
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    .s_bg-right {
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+
+    .s_bg-bottom {
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+
+    .s_bg-left {
+        background-repeat: no-repeat;
+        background-position: center left;
+    }
+}
+
+@include respond-above($break__medium) {
+    .m_bg-center {
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .m_bg-top {
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    .m_bg-right {
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+
+    .m_bg-bottom {
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+
+    .m_bg-left {
+        background-repeat: no-repeat;
+        background-position: center left;
+    }
+}
+
+@include respond-above($break__large) {
+    .l_bg-center {
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .l_bg-top {
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    .l_bg-right {
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+
+    .l_bg-bottom {
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+
+    .l_bg-left {
+        background-repeat: no-repeat;
+        background-position: center left;
+    }
+}

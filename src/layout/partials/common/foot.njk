@@ -1,0 +1,17 @@
+{# Load any "fm.extra" CSS and JS files listed in the md files. #}
+
+{% if fm.extra %}
+    {% for css in fm.extra.css %}
+        <link rel="stylesheet" href="{{css}}" type="text/css" media="print" onload="this.media='all'"/>
+    {% endfor %}
+{% endif %}
+
+{% if fm.extra %}
+    {% for js in fm.extra.js %}
+        <script src="{{js}}"></script>
+    {% endfor %}
+{% endif %}
+
+    <script src="/asset/js/instantpage.js" type="module"></script>
+    </body>
+</html>

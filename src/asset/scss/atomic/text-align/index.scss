@@ -1,0 +1,72 @@
+
+
+
+.tl {
+    text-align: left;
+}
+
+.tr {
+    text-align: right;
+}
+
+.tc {
+    text-align: center;
+}
+
+.tj {
+    text-align: justify;
+}
+
+@include respond-above($break__small) {
+    .s_tl {
+        text-align: left;
+    }
+
+    .s_tr {
+        text-align: right;
+    }
+
+    .s_tc {
+        text-align: center;
+    }
+
+    .s_tj {
+        text-align: justify;
+    }
+}
+
+@include respond-above($break__medium) {
+    .m_tl {
+        text-align: left;
+    }
+
+    .m_tr {
+        text-align: right;
+    }
+
+    .m_tc {
+        text-align: center;
+    }
+
+    .m_tj {
+        text-align: justify;
+    }
+}
+
+@include respond-above($break__large) {
+    .l_tl {
+        text-align: left;
+    }
+
+    .l_tr {
+        text-align: right;
+    }
+
+    .l_tc {
+        text-align: center;
+    }
+
+    .l_tj {
+        text-align: justify;
+    }
+}

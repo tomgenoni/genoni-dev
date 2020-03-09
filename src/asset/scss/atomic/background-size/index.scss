@@ -1,0 +1,37 @@
+.cover {
+    background-size: cover;
+}
+
+.contain {
+    background-size: contain;
+}
+
+@include respond-above($break__small) {
+    .s_cover {
+        background-size: cover;
+    }
+
+    .s_contain {
+        background-size: contain;
+    }
+}
+
+@include respond-above($break__medium) {
+    .m_cover {
+        background-size: cover;
+    }
+
+    .m_contain {
+        background-size: contain;
+    }
+}
+
+@include respond-above($break__large) {
+    .l_cover {
+        background-size: cover;
+    }
+
+    .l_contain {
+        background-size: contain;
+    }
+}

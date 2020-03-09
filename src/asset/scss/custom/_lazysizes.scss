@@ -1,0 +1,12 @@
+.lazyload,
+.lazyloading {
+    opacity: 0;
+    height: 0;
+}
+
+.lazyloaded {
+    opacity: 1;
+    transition: opacity 350ms;
+    height: auto;
+    padding-top: 0 !important;
+}

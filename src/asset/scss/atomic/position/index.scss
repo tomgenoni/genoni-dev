@@ -1,0 +1,69 @@
+.static {
+    position: static;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+@include respond-above($break__small) {
+    .s_static {
+        position: static;
+    }
+
+    .s_relative {
+        position: relative;
+    }
+
+    .s_absolute {
+        position: absolute;
+    }
+
+    .s_fixed {
+        position: fixed;
+    }
+}
+
+@include respond-above($break__medium) {
+    .m_static {
+        position: static;
+    }
+
+    .m_relative {
+        position: relative;
+    }
+
+    .m_absolute {
+        position: absolute;
+    }
+
+    .m_fixed {
+        position: fixed;
+    }
+}
+
+@include respond-above($break__large) {
+    .l_static {
+        position: static;
+    }
+
+    .l_relative {
+        position: relative;
+    }
+
+    .l_absolute {
+        position: absolute;
+    }
+
+    .l_fixed {
+        position: fixed;
+    }
+}

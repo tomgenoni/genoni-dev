@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+@import "core/config";
+@import "core/mixin";
+
+// Empty @media blocks force css-mqpacker to use this order for sorting.
+// https://github.com/hail2u/node-css-mqpacker#the-first-win-algorithm
+
+@include respond-above($break__small) {
+    /* small break */
+}
+@include respond-above($break__medium) {
+    /* medium break */
+}
+@include respond-above($break__large) {
+    /* large break */
+}
+
+// CSS output starts
+@import "core/reset";
+@import "core/font";
+
+@import "custom/main";
+@import "custom/link";
+@import "custom/wrap";
+@import "custom/markdown";
+
+@import "custom/header";
+
+@import "custom/lazysizes";
+@import "custom/prism";
+@import "custom/fadeshow";
+
+// Atomic library
+@import "atomic/atomic";

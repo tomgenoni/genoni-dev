@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="/asset/css/roll.css" type="text/css" />
+
+<h2 class="fw5 f4 m_f3 mb4">Work</h2>
+<ul>
+    {% for entry in work %}
+        <li id="{{entry.basename}}" {% if not loop.last %}class="mb6"{% endif %}>
+            <div class="mb4">
+                {% include "partials/index/roll.njk" %}
+            </div>
+            <div class="f7 m_f6 gray">
+                {{entry.fm.date}}
+            </div>
+            <h3 class="f5 m_f4 fw5 mb2">
+                {{entry.fm.title}}
+            </h3>
+            <div class="markdown">
+                {{entry.body | safe}}
+            </div>
+            <ol class="flex f6">
+                {% for link in entry.fm.links %}
+                    <li>
+                        <a class="link link-external fw5" href="{{link.url}}">{{link.title}}</a>{% if not loop.last %}<span class="mh2 gray">•</span>{% endif %}
+                    </li>
+                {% endfor %}
+            </ol>
+        </li>
+    {% endfor %}
+</ul>

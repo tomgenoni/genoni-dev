@@ -1,0 +1,35 @@
+<div class="roll mb3" data-step="0">
+    <div class="roll-rail">
+        <ol class="roll-wrap">
+            {% for roll in entry.fm.roll %}
+                <li class="roll-pane">
+                    <div class="roll-pane-content">
+                        {% set class = 'stripe-bkg ' + roll.class %}
+                        {{ picture
+                            (
+                                image=roll.image,
+                                alt=roll.alt,
+                                placeholder=roll.placeholder,
+                                class=class
+                            )
+                        }}
+                        {% if roll.description %}
+                            <div class="f8 lh-copy mt2 black-300 reading">{{roll.description}}</div>
+                        {% endif %}
+                    </div>
+                </li>
+            {% endfor %}
+        </ol>
+    </div>
+    {% if entry.fm.roll.length > 1 %}
+        <div class="roll-control">
+            <button type="button" aria-label="Move backward" class="roll-button roll-arrow roll-arrow-left" style="visibility: hidden" data-dir="1"></button>
+            <div class="roll-dots-wrap">
+                {% for roll in entry.fm.roll %}
+                    <div class="roll-dot{% if loop.first %} is-active{% endif %}"></div>
+                {% endfor %}
+            </div>
+            <button type="button" aria-label="Move forward" class="roll-button roll-arrow roll-arrow-right" data-dir="-1"></button>
+        </div>
+    {% endif %}
+</div>

@@ -1,0 +1,72 @@
+
+
+
+.ttc {
+    text-transform: capitalize;
+}
+
+.ttl {
+    text-transform: lowercase;
+}
+
+.ttu {
+    text-transform: uppercase;
+}
+
+.ttn {
+    text-transform: none;
+}
+
+@include respond-above($break__small) {
+    .s_ttc {
+        text-transform: capitalize;
+    }
+
+    .s_ttl {
+        text-transform: lowercase;
+    }
+
+    .s_ttu {
+        text-transform: uppercase;
+    }
+
+    .s_ttn {
+        text-transform: none;
+    }
+}
+
+@include respond-above($break__medium) {
+    .m_ttc {
+        text-transform: capitalize;
+    }
+
+    .m_ttl {
+        text-transform: lowercase;
+    }
+
+    .m_ttu {
+        text-transform: uppercase;
+    }
+
+    .m_ttn {
+        text-transform: none;
+    }
+}
+
+@include respond-above($break__large) {
+    .l_ttc {
+        text-transform: capitalize;
+    }
+
+    .l_ttl {
+        text-transform: lowercase;
+    }
+
+    .l_ttu {
+        text-transform: uppercase;
+    }
+
+    .l_ttn {
+        text-transform: none;
+    }
+}

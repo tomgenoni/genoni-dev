@@ -1,0 +1,25 @@
+{% set hero = { image: "tokyo_p-q9MLNaD" } %}
+
+{% set bodyClass = "index" %}
+
+{% from "../macros/picture.njk" import picture %}
+
+{% include "partials/common/head.njk" %}
+{% include "partials/common/header.njk" %}
+
+<div class="content center ph3 m_ph5 l_ph6 pb5">
+    <section id="write" class="mb6 pt3">
+        {% include "partials/index/write.njk" %}
+    </section>
+    <div class="stripe-bkg h1 mb5"></div>
+    <section id="work" class="mb6 pt3">
+        {% include "partials/index/work.njk" %}
+    </section>
+    <div class="stripe-bkg h1 mb5"></div>
+    <section id="about" class="pt3">
+        {% include "partials/index/about.njk" %}
+    </section>
+</div>
+
+<script type="text/javascript" src="/asset/js/roll.js"></script>
+{% include "partials/common/foot.njk" %}

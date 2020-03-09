@@ -1,0 +1,32 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: $sans;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: $f6;
+}
+
+.content {
+    max-width: 1100px;
+}
+
+.reading {
+    max-width: 700px;
+}
+
+:root {
+    --stripe-color: #ddd;
+}
+
+.stripe-bkg {
+    background-image: linear-gradient(45deg,
+            var(--stripe-color) 4.55%,
+            transparent 4.55%,
+            transparent 50%,
+            var(--stripe-color) 50%,
+            var(--stripe-color) 54.55%,
+            transparent 54.55%,
+            transparent 100%);
+    background-size: 15.56px 15.56px;
+}

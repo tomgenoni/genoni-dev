@@ -1,0 +1,179 @@
+@import "core/config";
+@import "core/mixin";
+
+.roll-rail {
+    overflow: hidden;
+    margin-left: -$space__3;
+    margin-right: -$space__3;
+
+    @include respond-above($break__medium) {
+        margin-left: -$space__5;
+        margin-right: -$space__5;
+    }
+
+    @include respond-above($break__large) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.roll-wrap {
+    display: flex;
+    transition: transform 300ms ease-in-out;
+
+    @include respond-below($break__large) {
+        scroll-snap-type: x mandatory;
+        transform: translateX(0) !important;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: -30px; // Cover scrollbar
+    }
+}
+
+.roll-pane {
+    display: flex;
+    position: relative;
+    min-width: 90%;
+    scroll-snap-align: start;
+
+    padding-left: $space__3;
+    padding-bottom: 30px;
+
+    // Hack to make room after the last scrollable item.
+    &:last-child:after {
+        content: " ";
+        width: $space__3;
+        height: $space__3;
+        position: absolute;
+        top: 0;
+        left: 100%;
+    }
+
+    @include respond-above($break__medium) {
+        padding-left: $space__5;
+
+        &:first-child {
+            padding-left: $space__5;
+        }
+
+        // Hack to make room after the last scrollable item.
+        &:last-child:after {
+            width: $space__5;
+            height: $space__5;
+        }
+    }
+
+    @include respond-above($break__large) {
+        min-width: 100%;
+        padding-bottom: 0;
+        padding-left: 0;
+
+        &:first-child {
+            padding-left: 0;
+        }
+
+        &:last-child:after {
+            display: none;
+        }
+    }
+}
+
+.roll-pane-content {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+}
+
+// -------------------------------------
+// Roll controls
+// -------------------------------------
+
+.roll-control {
+    display: none;
+
+    @include respond-above($break__large) {
+        display: block;
+        margin-top: $space__3;
+        position: relative;
+    }
+}
+
+.roll-button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.roll-button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+.roll-arrow {
+    position: absolute;
+    top: 0;
+    width: $space__4;
+    height: $space__4;
+}
+
+.roll-arrow:before {
+    content: "";
+    display: block;
+    width: $space__3;
+    height: $space__3;
+    border: solid #999;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    transform: rotate(135deg);
+    position: relative;
+    left: 4px;
+}
+
+.roll-arrow:focus:before,
+.roll-arrow:hover:before {
+    transition: border-color 150ms;
+    border-color: #222;
+}
+
+.roll-arrow-right {
+    right: 0;
+}
+
+.roll-arrow-right:before {
+    transform: rotate(-45deg);
+}
+
+// -------------------------------------
+// Progress dots
+// -------------------------------------
+
+.roll-dots-wrap {
+    height: $space__4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.roll-dot {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+    background: $color__black-300;
+    opacity: 0.3;
+    transition: transform 150ms, opacity 150ms;
+}
+
+.roll-dot.is-active {
+    opacity: 1;
+    transform: scale(1.4);
+}

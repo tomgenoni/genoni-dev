@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% set description = fm.description | default("The portfolio of Tom Genoni, a frontend designer living in San Francisco.") %}
+
+<html lang="en" class="bg-gray-200">
+    <head>
+        <title>{% if fm.title %}{{fm.title}} • {% endif %}genoni.dev</title>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="{{description}}" />
+        <meta property="og:image" content="{{urls.imageKit}}/{{urls.imageKitCode}}/{{fm.hero.image}}.jpg?tr=w-1200,ar-1-1" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/asset/image/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/asset/image/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/asset/image/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/asset/image/favicon/site.webmanifest">
+        <link rel="mask-icon" href="/asset/image/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/asset/image/favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="/asset/image/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">        
+
+        <link rel="preconnect" href="{{urls.imageKit}}">
+        <link rel="dns-prefetch" href="{{urls.imageKit}}">
+
+        <link rel="preload" href="/asset/font/Graphik-Regular-Web.woff2" as="font" crossorigin>
+        <link rel="preload" href="/asset/font/Graphik-Medium-Web.woff2" as="font" crossorigin>
+
+        <style>
+            @font-face {
+                font-family: "Graphik";
+                font-weight: 400;
+                src: url("/asset/font/Graphik-Regular-Web.woff2") format("woff2"),
+                    url("/asset/font/Graphik-Regular-Web.woff") format("woff");
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: "Graphik";
+                font-weight: 500;
+                src: url("/asset/font/Graphik-Medium-Web.woff2") format("woff2"),
+                    url("/asset/font/Graphik-Medium-Web.woff") format("woff");
+                font-display: swap;
+            }
+          </style>
+
+        <link rel="stylesheet" href="/asset/css/root.css" type="text/css" />
+
+        <script type="text/javascript" src="/asset/js/lazysizes.min.js" async></script>
+    </head>
+    <body class="{% if bodyClass %}{{bodyClass}}{% endif %}"
+>

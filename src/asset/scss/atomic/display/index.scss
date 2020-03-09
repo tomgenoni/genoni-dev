@@ -1,0 +1,204 @@
+
+
+
+.dn {
+    display: none;
+}
+
+.di {
+    display: inline;
+}
+
+.db {
+    display: block;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.dit {
+    display: inline-table;
+}
+
+.dt {
+    display: table;
+}
+
+.dtc {
+    display: table-cell;
+}
+
+.dt-row {
+    display: table-row;
+}
+
+.dt-row-group {
+    display: table-row-group;
+}
+
+.dt-column {
+    display: table-column;
+}
+
+.dt-column-group {
+    display: table-column-group;
+}
+
+.dt-fixed {
+    table-layout: fixed;
+    width: 100%;
+}
+
+@include respond-above($break__small) {
+    .s_dn {
+        display: none;
+    }
+
+    .s_di {
+        display: inline;
+    }
+
+    .s_db {
+        display: block;
+    }
+
+    .s_dib {
+        display: inline-block;
+    }
+
+    .s_dit {
+        display: inline-table;
+    }
+
+    .s_dt {
+        display: table;
+    }
+
+    .s_dtc {
+        display: table-cell;
+    }
+
+    .s_dt-row {
+        display: table-row;
+    }
+
+    .s_dt-row-group {
+        display: table-row-group;
+    }
+
+    .s_dt-column {
+        display: table-column;
+    }
+
+    .s_dt-column-group {
+        display: table-column-group;
+    }
+
+    .s_dt-fixed {
+        table-layout: fixed;
+        width: 100%;
+    }
+}
+
+@include respond-above($break__medium) {
+    .m_dn {
+        display: none;
+    }
+
+    .m_di {
+        display: inline;
+    }
+
+    .m_db {
+        display: block;
+    }
+
+    .m_dib {
+        display: inline-block;
+    }
+
+    .m_dit {
+        display: inline-table;
+    }
+
+    .m_dt {
+        display: table;
+    }
+
+    .m_dtc {
+        display: table-cell;
+    }
+
+    .m_dt-row {
+        display: table-row;
+    }
+
+    .m_dt-row-group {
+        display: table-row-group;
+    }
+
+    .m_dt-column {
+        display: table-column;
+    }
+
+    .m_dt-column-group {
+        display: table-column-group;
+    }
+
+    .m_dt-fixed {
+        table-layout: fixed;
+        width: 100%;
+    }
+}
+
+@include respond-above($break__large) {
+    .l_dn {
+        display: none;
+    }
+
+    .l_di {
+        display: inline;
+    }
+
+    .l_db {
+        display: block;
+    }
+
+    .l_dib {
+        display: inline-block;
+    }
+
+    .l_dit {
+        display: inline-table;
+    }
+
+    .l_dt {
+        display: table;
+    }
+
+    .l_dtc {
+        display: table-cell;
+    }
+
+    .l_dt-row {
+        display: table-row;
+    }
+
+    .l_dt-row-group {
+        display: table-row-group;
+    }
+
+    .l_dt-column {
+        display: table-column;
+    }
+
+    .l_dt-column-group {
+        display: table-column-group;
+    }
+
+    .l_dt-fixed {
+        table-layout: fixed;
+        width: 100%;
+    }
+}
