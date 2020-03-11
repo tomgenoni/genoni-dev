@@ -76,9 +76,9 @@
             @include atoms(f2, lh-solid, m_lh-title, mb0, -ls-1);
 
             &:before {
+                @include atoms(red, fw7, serif);
                 content: "“";
-                font-family: $serif;
-                font-weight: 700;
+                
 
                 // Position the hanging quote only above medium.
                 @include respond-above($break__medium) {
@@ -88,9 +88,8 @@
             }
 
             &:after {
+                @include atoms(red, fw7, serif);
                 content: "”";
-                font-family: $serif;
-                font-weight: 700;
             }
         }
 
