@@ -70,7 +70,7 @@
 
     // Larger, feature blockquote
     .pullquote {
-        @include atoms(mv4, m_mv5, m_relative);
+        @include atoms(mv5, m_relative);
 
         p {
             @include atoms(f2, lh-solid, m_lh-title, mb0, -ls-1);
@@ -78,7 +78,7 @@
             &:before {
                 @include atoms(red, fw7, serif);
                 content: "“";
-                
+
 
                 // Position the hanging quote only above medium.
                 @include respond-above($break__medium) {
@@ -94,7 +94,7 @@
         }
 
         .credit {
-            @include atoms(f7, gray, db, pt3, fw5);
+            @include atoms(f7, black-300, db, pt3);
 
             &:before {
                 @include atoms(bg-red);
