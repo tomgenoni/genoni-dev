@@ -63,6 +63,40 @@
         list-style-type: decimal;
     }
 
+    // Tables
+
+    table {
+        @include atoms(w-100, f7, mb4, tl, black-300);
+    }
+
+    th {
+        @include atoms(fw6);
+    }
+
+    th,
+    td {
+        @include atoms(pv1, pr2);
+    }
+
+    th {
+        @include atoms(bb, bw-2, b-gray-300);
+    }
+
+    td {
+        @include atoms(bb, b-gray-300);
+    }
+}
+
+.markdown-post {
+    @include atoms(f6, m_f5);
+
+    p,
+    ul,
+    li,
+    table {
+        @include atoms(serif)
+    }
+
     blockquote {
         @include atoms(bl, bw-4, b-gray-300, pl3, mv4);
     }
@@ -72,7 +106,7 @@
         @include atoms(mv5, m_relative);
 
         p {
-            @include atoms(f2, lh-solid, m_lh-title, mb0, -ls1);
+            @include atoms(f2, sans, lh-solid, m_lh-title, mb0, -ls2);
 
             &:before {
                 @include atoms(red, fw7, serif);
@@ -117,7 +151,7 @@
     // Pre
 
     pre {
-        @include atoms(br2, mv4, bg-white, f8, ba, b-gray-300);
+        @include atoms(br2, mv4, bg-white, f8, m_f6, ba, b-gray-300);
         color: $color__black-300;
         font-family: 'Source Code Pro', monospace;
         white-space: pre;
@@ -141,28 +175,5 @@
             @include atoms(pa3, db, ml4, pl5);
             overflow-y: scroll;
         }
-    }
-
-    // Tables
-
-    table {
-        @include atoms(w-100, f7, mb4, tl, black-300);
-    }
-
-    th {
-        @include atoms(fw6);
-    }
-
-    th,
-    td {
-        @include atoms(pv1, pr2);
-    }
-
-    th {
-        @include atoms(bb, bw-2, b-gray-300);
-    }
-
-    td {
-        @include atoms(bb, b-gray-300);
     }
 }

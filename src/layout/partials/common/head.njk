@@ -59,7 +59,11 @@
 
         <link rel="stylesheet" href="/asset/css/root.css" type="text/css" />
 
+        {# Add serif font if it's a post #}
+        {% if bodyClass == "post" %}
+            <link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        {% endif %}
+
         <script type="text/javascript" src="/asset/js/lazysizes.min.js" async></script>
     </head>
-    <body class="{% if bodyClass %}{{bodyClass}}{% endif %}"
->
+    <body {% if bodyClass %}class="{{bodyClass}}"{% endif %}>

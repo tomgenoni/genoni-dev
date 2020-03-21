@@ -1,7 +1,9 @@
 {% from "../macros/picture.njk" import picture %}
+{% set bodyClass = "post" %}
 
 {% include "partials/common/head.njk" %}
 {% include "partials/common/header.njk" %}
+
 
 {{ picture
     (
@@ -21,7 +23,7 @@
         <h1 class="f2 m_f1 lh-solid fw8 mb1">{{fm.title}}</h1>
         <div class="f3 m_f2 lh-solid fw3 gray m_-ls1">{{fm.description}}</div>
     </div>
-    <div class="markdown">
+    <div class="markdown markdown-post">
         {{body | safe}}
     </div>
 </div>
