@@ -90,13 +90,6 @@
 .markdown-post {
     @include atoms(f6, m_f5);
 
-    p,
-    ul,
-    li,
-    table {
-        @include atoms(serif)
-    }
-
     blockquote {
         @include atoms(bl, bw-4, b-gray-300, pl3, mv4);
     }
@@ -106,7 +99,7 @@
         @include atoms(mv5, m_relative);
 
         p {
-            @include atoms(f2, sans, lh-solid, m_lh-title, mb0, -ls2);
+            @include atoms(f3, m_f2, sans, lh-title, mb0, -ls2);
 
             &:before {
                 @include atoms(red, fw7, serif);
@@ -151,7 +144,7 @@
     // Pre
 
     pre {
-        @include atoms(br2, mv4, bg-white, f8, m_f6, ba, b-gray-300);
+        @include atoms(br2, mv4, bg-white, f8, m_f7, ba, b-gray-300);
         color: $color__black-300;
         font-family: 'Source Code Pro', monospace;
         white-space: pre;

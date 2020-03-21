@@ -1,7 +1,7 @@
 <h2 class="fw5 f4 m_f3 mb4">Write</h2>
 <ul class="m_grid m_grid-wide">
     {% for post in write %}
-        <li class="m_col-6 {% if not loop.last %}mb3{% endif %}">
+        <li class="l_col-6 {% if not loop.last %}mb4{% endif %}">
             <a href="/write/{{post.basename}}.html" class="link-inherit db">
                 <div class="flex">
                     <div class="w4 h4 flex-none mr3">
@@ -15,11 +15,14 @@
                         }}
                     </div>
                     <div class="flex-1">
-                        <h3 class="fw6 -mt1 f6 lh-title mb1">
+                        <h3 class="fw6 f6 m_f5 -mt1 lh-title">
                             {{post.fm.title}}
                         </h3>
-                        <div class="f7 black-300 lh-copy">
+                        <div class="black-300 lh-copy mb1">
                             {{post.fm.description}}
+                        </div>
+                        <div class="f8 gray lh-copy">
+                            {{post.fm.date}}
                         </div>
                     </div>
                 </div>
