@@ -19,7 +19,7 @@
             <ol class="flex f6">
                 {% for link in entry.fm.links %}
                     <li>
-                        <a class="link link-external fw5" href="{{link.url}}">{{link.title}}</a>{% if not loop.last %}<span class="mh2 gray">•</span>{% endif %}
+                        <a class="link link-external fw6" href="{{link.url}}">{{link.title}}</a>{% if not loop.last %}<span class="mh2 gray">•</span>{% endif %}
                     </li>
                 {% endfor %}
             </ol>
