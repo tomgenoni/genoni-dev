@@ -88,7 +88,11 @@
 }
 
 .markdown-post {
-    @include atoms(f6, m_f5);
+    @include atoms(f6);
+
+    @include respond-above($break__medium) {
+        font-size: 18px; // Custom size
+    }
 
     blockquote {
         @include atoms(bl, bw-4, b-gray-300, pl3, mv4);
