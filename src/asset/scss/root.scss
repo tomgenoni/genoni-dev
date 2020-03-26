@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-@import "core/config";
-@import "core/mixin";
+@import 'core/config';
+@import 'core/mixin';
 
 // Empty @media blocks force css-mqpacker to use this order for sorting.
 // https://github.com/hail2u/node-css-mqpacker#the-first-win-algorithm
@@ -17,20 +17,20 @@
 }
 
 // CSS output starts
-@import "core/reset";
-@import "core/font";
+@import 'core/reset';
+@import 'core/font';
 
-@import "custom/main";
-@import "custom/link";
-@import "custom/wrap";
-@import "custom/markdown";
+@import 'custom/main';
+@import 'custom/link';
+@import 'custom/wrap';
+@import 'custom/markdown';
 
-@import "custom/header";
+@import 'custom/header';
 
-@import "custom/lazysizes";
-@import "custom/prism";
-@import "custom/fadeshow";
-@import "custom/side-scroll";
+@import 'custom/lazysizes';
+@import 'custom/prism';
+@import 'custom/fadeshow';
+@import 'custom/side-scroll';
 
 // Atomic library
-@import "atomic/atomic";
+@import 'atomic/atomic';

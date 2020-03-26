@@ -32,7 +32,5 @@
         "yaml",
         "yml"
     ],
-    "cSpell.ignoreWords": [
-        "pullquote"
-    ]
+    "cSpell.ignoreWords": ["pullquote"]
 }

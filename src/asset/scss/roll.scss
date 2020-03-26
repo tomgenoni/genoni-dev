@@ -1,5 +1,5 @@
-@import "core/config";
-@import "core/mixin";
+@import 'core/config';
+@import 'core/mixin';
 
 .roll-rail {
     overflow: hidden;
@@ -42,7 +42,7 @@
 
     // Hack to make room after the last scrollable item.
     &:last-child:after {
-        content: " ";
+        content: ' ';
         width: $space__3;
         height: $space__3;
         position: absolute;
@@ -126,7 +126,7 @@
 }
 
 .roll-arrow:before {
-    content: "";
+    content: '';
     display: block;
     width: $space__3;
     height: $space__3;

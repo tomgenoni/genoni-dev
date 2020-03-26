@@ -1,4 +1,4 @@
-# genoni.dev 
+# genoni.dev
 
 Source of genoni.dev
 
@@ -18,11 +18,11 @@ Will build site and start local server at [`localhost:3000`](http://localhost:30
 
 ## Production build
 
-Pushes to `master` will rebuild site on Netlify using `yarn build`. 
+Pushes to `master` will rebuild site on Netlify using `yarn build`.
 
 ### Sitemap
 
-If the site structure has changed run the sitemap generator manually: 
+If the site structure has changed run the sitemap generator manually:
 
 ```
 yarn sitemap:build
