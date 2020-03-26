@@ -1,23 +1,23 @@
 function initRoll() {
-    const rolls = document.querySelectorAll(".roll");
+    const rolls = document.querySelectorAll('.roll');
 
-    rolls.forEach(roll => {
+    rolls.forEach((roll) => {
         // Elements of a roll
         // -------------------------------------------
 
-        const wrap = roll.querySelector(".roll-wrap");
-        const arrows = roll.querySelectorAll(".roll-arrow");
-        const panes = roll.querySelectorAll(".roll-pane");
-        const dots = roll.querySelectorAll(".roll-dot");
+        const wrap = roll.querySelector('.roll-wrap');
+        const arrows = roll.querySelectorAll('.roll-arrow');
+        const panes = roll.querySelectorAll('.roll-pane');
+        const dots = roll.querySelectorAll('.roll-dot');
 
         // Capture clicks
         // -------------------------------------------
 
-        arrows.forEach(arrow => {
-            arrow.addEventListener("click", arrowTrigger);
+        arrows.forEach((arrow) => {
+            arrow.addEventListener('click', arrowTrigger);
         });
 
-        document.onkeyup = function(e) {
+        document.onkeyup = function (e) {
             switch (e.keyCode) {
                 case 9:
                     // On tab focus set the active roll
@@ -26,13 +26,13 @@ function initRoll() {
                 case 37:
                     // On left arrow keyboard click, simulate roll arrow mouse click
                     document
-                        .querySelector(".roll.is-active .roll-arrow-left")
+                        .querySelector('.roll.is-active .roll-arrow-left')
                         .click();
                     break;
                 case 39:
                     // On right arrow keyboard click, simulate roll arrow mouse click
                     document
-                        .querySelector(".roll.is-active .roll-arrow-right")
+                        .querySelector('.roll.is-active .roll-arrow-right')
                         .click();
                     break;
             }
@@ -54,26 +54,26 @@ function initRoll() {
         // Use 'visibility' instead of 'display' so it doesn't lose focus
         // and move it to the next available element
         function hideArrow(step) {
-            arrows[0].style.visibility = step == 0 ? "hidden" : "visible";
+            arrows[0].style.visibility = step == 0 ? 'hidden' : 'visible';
             arrows[1].style.visibility =
-                step == panes.length - 1 ? "hidden" : "visible";
+                step == panes.length - 1 ? 'hidden' : 'visible';
         }
 
         // Determine which roll is active, sets "is-active" class
         function setActiveDot(step) {
             dots.forEach(({ classList }) => {
-                classList.remove("is-active");
+                classList.remove('is-active');
             });
-            dots[step].classList.add("is-active");
+            dots[step].classList.add('is-active');
         }
 
         // Determine which roll is active, sets "is-active" class
         function setActiveRoll() {
             rolls.forEach(({ classList }) => {
-                classList.remove("is-active");
+                classList.remove('is-active');
             });
             const focusedEl = document.activeElement;
-            focusedEl.closest(".roll").classList.add("is-active");
+            focusedEl.closest('.roll').classList.add('is-active');
         }
 
         // Mouse click on arrow

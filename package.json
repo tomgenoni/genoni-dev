@@ -1,53 +1,58 @@
 {
-  "name": "genoni.dev",
-  "description": "Source of genoni.dev",
-  "version": "1.0.0",
-  "devDependencies": {},
-  "scripts": {
-    "init": "bash scripts.sh init",
-    "content": "bash scripts.sh content",
-    "css:dev": "bash scripts.sh css:dev",
-    "css:prod": "bash scripts.sh css:prod",
-    "copy": "bash scripts.sh copy",
-    "watch": "bash scripts.sh watch",
-    "start": "bash scripts.sh start",
-    "build": "bash scripts.sh build",
-    "sitemap:build": "bash scripts.sh sitemap:build",
-    "sitemap:copy": "bash scripts.sh sitemap:copy",
-    "screenshot_remote": "mkdir -p ./tmp && node tools/remote-screenshot.js ${0}",
-    "screenshot_local": "mkdir -p ./tmp && node tools/crop-local-screenshot.js ${0}"
-  },
-  "dependencies": {
-    "browser-sync": "^2.24.7",
-    "chokidar-cli": "^2.1.0",
-    "concurrently": "^5.0.2",
-    "css-mqpacker": "^7.0.0",
-    "cssnano": "^4.1.0",
-    "front-matter": "^3.0.2",
-    "fs-extra": "^9.0.0",
-    "glob": "^7.1.2",
-    "html-minifier": "^4.0.0",
-    "instant.page": "^3.0.0",
-    "lazysizes": "^5.2.0",
-    "marked": "^0.8.1",
-    "node-minify": "^3.6.0",
-    "node-sass": "^4.11.0",
-    "nunjucks": "^3.2.1",
-    "pageres": "^5.2.0",
-    "postcss-cli": "^7.1.0",
-    "prismjs": "^1.15.0",
-    "purgecss": "^2.0.6",
-    "sharp": "^0.25.1",
-    "sitemap-generator": "^8.4.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tomgenoni/atomeye.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tomgenoni/atomeye/issues"
-  },
-  "homepage": "https://github.com/tomgenoni/atomeye#readme"
+    "name": "genoni.dev",
+    "description": "Source of genoni.dev",
+    "version": "1.0.0",
+    "devDependencies": {
+        "eslint": "^6.8.0",
+        "prettier": "^2.0.2"
+    },
+    "scripts": {
+        "init": "bash scripts.sh init",
+        "content": "bash scripts.sh content",
+        "css:dev": "bash scripts.sh css:dev",
+        "css:prod": "bash scripts.sh css:prod",
+        "copy": "bash scripts.sh copy",
+        "watch": "bash scripts.sh watch",
+        "start": "bash scripts.sh start",
+        "build": "bash scripts.sh build",
+        "sitemap:build": "bash scripts.sh sitemap:build",
+        "sitemap:copy": "bash scripts.sh sitemap:copy",
+        "screenshot_remote": "mkdir -p ./tmp && node tools/remote-screenshot.js ${0}",
+        "screenshot_local": "mkdir -p ./tmp && node tools/crop-local-screenshot.js ${0}",
+        "test:prettier": "prettier \"**/*.{js,css,scss,json,md,html}\" --list-different",
+        "format": "prettier \"**/*.{js,css,scss,json,md,html}\" --write"
+    },
+    "dependencies": {
+        "browser-sync": "^2.24.7",
+        "chokidar-cli": "^2.1.0",
+        "concurrently": "^5.0.2",
+        "css-mqpacker": "^7.0.0",
+        "cssnano": "^4.1.0",
+        "front-matter": "^3.0.2",
+        "fs-extra": "^9.0.0",
+        "glob": "^7.1.2",
+        "html-minifier": "^4.0.0",
+        "instant.page": "^3.0.0",
+        "lazysizes": "^5.2.0",
+        "marked": "^0.8.1",
+        "node-minify": "^3.6.0",
+        "node-sass": "^4.11.0",
+        "nunjucks": "^3.2.1",
+        "pageres": "^5.2.0",
+        "postcss-cli": "^7.1.0",
+        "prismjs": "^1.15.0",
+        "purgecss": "^2.0.6",
+        "sharp": "^0.25.1",
+        "sitemap-generator": "^8.4.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tomgenoni/atomeye.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/tomgenoni/atomeye/issues"
+    },
+    "homepage": "https://github.com/tomgenoni/atomeye#readme"
 }

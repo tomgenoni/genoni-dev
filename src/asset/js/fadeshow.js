@@ -1,17 +1,17 @@
 function initFadeshow() {
-    const fadeshows = document.querySelectorAll(".fadeshow");
+    const fadeshows = document.querySelectorAll('.fadeshow');
 
-    fadeshows.forEach(fadeshow => {
-        const images = fadeshow.querySelectorAll("img");
-        images[0].classList.add("is-active");
+    fadeshows.forEach((fadeshow) => {
+        const images = fadeshow.querySelectorAll('img');
+        images[0].classList.add('is-active');
         let counter = 0;
 
         function fadeImages(img1, img2) {
-            images[img1].classList.remove("is-active")
-            images[img2].classList.add("is-active")
+            images[img1].classList.remove('is-active');
+            images[img2].classList.add('is-active');
         }
 
-        const fadeshowInterval = setInterval(function() {
+        const fadeshowInterval = setInterval(function () {
             if (counter === images.length - 1) {
                 fadeImages(images.length - 1, 0);
                 counter = 0;

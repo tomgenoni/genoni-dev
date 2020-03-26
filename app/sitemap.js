@@ -1,5 +1,5 @@
 const SitemapGenerator = require('sitemap-generator');
-const vars = require("./variables");
+const vars = require('./variables');
 
 // create generator
 const generator = SitemapGenerator(vars.urls.site, {
@@ -9,7 +9,7 @@ const generator = SitemapGenerator(vars.urls.site, {
 
 // register event listeners
 generator.on('done', () => {
-    console.log("✔ sitemap")
+    console.log('✔ sitemap');
 });
 
 // start the crawler
