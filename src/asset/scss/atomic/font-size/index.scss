@@ -30,6 +30,10 @@
     font-size: $f8;
 }
 
+.f9 {
+    font-size: $f9;
+}
+
 @include respond-above($break__small) {
     .s_f1 {
         font-size: $f1;
@@ -61,6 +65,10 @@
 
     .s_f8 {
         font-size: $f8;
+    }
+
+    .s_f9 {
+        font-size: $f9;
     }
 }
 
@@ -96,6 +104,10 @@
     .m_f8 {
         font-size: $f8;
     }
+
+    .m_f9 {
+        font-size: $f9;
+    }
 }
 
 @include respond-above($break__large) {
@@ -129,5 +141,9 @@
 
     .l_f8 {
         font-size: $f8;
+    }
+
+    .l_f9 {
+        font-size: $f9;
     }
 }

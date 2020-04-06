@@ -36,7 +36,7 @@
         "lazysizes": "^5.2.0",
         "marked": "^0.8.1",
         "node-minify": "^3.6.0",
-        "node-sass": "^4.11.0",
+        "node-sass": "^4.13.1",
         "nunjucks": "^3.2.1",
         "pageres": "^5.2.0",
         "postcss-cli": "^7.1.0",
@@ -47,12 +47,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/tomgenoni/atomeye.git"
+        "url": "git+https://github.com/tomgenoni/genoni-dev.git"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/tomgenoni/atomeye/issues"
+        "url": "https://github.com/tomgenoni/genoni-dev/issues"
     },
-    "homepage": "https://github.com/tomgenoni/atomeye#readme"
+    "homepage": "https://github.com/tomgenoni/genoni-dev#readme"
 }
