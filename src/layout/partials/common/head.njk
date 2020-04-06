@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-{% set description = fm.description | default("The portfolio of Tom Genoni, a frontend designer living in San Francisco.") %}
+{% set description = fm.description | default("The portfolio of Tom Genoni, a design technologist living in San Francisco.") %}
 {% set ogImage = fm.hero.image | default("skills-hero") %}
 
 <html lang="en" class="bg-gray-200">
     <head>
-        <title>{% if fm.title %}{{fm.title}} • {% endif %}genoni.dev</title>
+        <title>{% if fm.title %}{{fm.title}} • {% endif %}Tom Genoni • Design Technologist</title>
 
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
@@ -13,7 +13,7 @@
         <meta name="author" content="Tom Genoni">
 
         {# Open Graph #}
-        <meta property="og:title" content="{% if fm.title %}{{fm.title}}{% else %}genoni.dev{% endif %}"/>
+        <meta property="og:title" content="{% if fm.title %}{{fm.title}}{% else %}Tom Genoni • Design Technologist{% endif %}"/>
         <meta property="og:description" content="{{description}}"/>
         <meta property="og:image" content="{{urls.imageKit}}/{{urls.imageKitCode}}/{{ogImage}}.jpg?tr=w-1200,ar-1-1" />
         <meta property="og:image:width" content="1200" />
