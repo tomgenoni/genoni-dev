@@ -9,9 +9,11 @@
 @include respond-above($break__small) {
     /* small break */
 }
+
 @include respond-above($break__medium) {
     /* medium break */
 }
+
 @include respond-above($break__large) {
     /* large break */
 }
@@ -26,6 +28,8 @@
 @import 'custom/markdown';
 
 @import 'custom/header';
+@import 'custom/hero';
+@import 'roll';
 
 @import 'custom/lazysizes';
 @import 'custom/prism';

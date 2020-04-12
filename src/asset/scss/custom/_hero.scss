@@ -1,0 +1,37 @@
+.hero {
+    height: 75vh;
+
+    @include respond-above($break__large) {
+        min-height: 800px;
+    }
+
+    &-title {
+        @include atoms(f2, m_f1);
+
+        @include respond-above($break__large) {
+            font-size: 54px
+        }
+    }
+
+    &-list {
+        list-style-type: disc;
+
+        @include respond-above($break__medium) {
+            column-count: 2;
+            column-gap: $space__3;
+        }
+
+        li {
+            margin-left: $space__4;
+        }
+    }
+
+    &-illu {
+        display: none;
+
+        @include respond-above($break__large) {
+            margin-top: -20%;
+            display: block;
+        }
+    }
+}

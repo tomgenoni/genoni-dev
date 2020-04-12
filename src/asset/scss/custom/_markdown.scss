@@ -6,7 +6,7 @@
         transition: border-color 0.2s;
 
         &:hover {
-            border-color: $color__red;
+            border-color: $color__blue;
             transition: border-color 0.2s;
         }
     }
@@ -37,7 +37,7 @@
     }
 
     .caption {
-        @include atoms(f7, mb4, -mt3, black-300, reading);
+        @include atoms(reading, f7, mb4, -mt3, black-300);
     }
 
     h2,
@@ -88,10 +88,24 @@
 }
 
 .markdown-post {
+
     @include atoms(f6);
 
     @include respond-above($break__medium) {
         font-size: 18px; // Custom size
+    }
+
+    >p,
+    >ol,
+    >ul,
+    >table,
+    >pre,
+    >h1,
+    >h2,
+    >h3,
+    >h4,
+    >h5 {
+        @include atoms(center);
     }
 
     blockquote {
@@ -100,7 +114,7 @@
 
     // Larger, feature blockquote
     .pullquote {
-        @include atoms(mv5, m_relative);
+        @include atoms(mv5, m_relative, l_mh7);
 
         p {
             @include atoms(f3, m_f2, sans, lh-title, mb0, -ls2);
@@ -129,7 +143,7 @@
             @include atoms(f7, black-300, db, pt3);
 
             &:before {
-                @include atoms(bg-red);
+                @include atoms(bg-blue);
                 content: '';
                 height: 2px;
                 width: 30px;

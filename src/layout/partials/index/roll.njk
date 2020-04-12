@@ -21,15 +21,4 @@
             {% endfor %}
         </ol>
     </div>
-    {% if entry.fm.roll.length > 1 %}
-        <div class="roll-control">
-            <button type="button" aria-label="Move backward" class="roll-button roll-arrow roll-arrow-left" style="visibility: hidden" data-dir="1"></button>
-            <div class="roll-dots-wrap">
-                {% for roll in entry.fm.roll %}
-                    <div class="roll-dot{% if loop.first %} is-active{% endif %}"></div>
-                {% endfor %}
-            </div>
-            <button type="button" aria-label="Move forward" class="roll-button roll-arrow roll-arrow-right" data-dir="-1"></button>
-        </div>
-    {% endif %}
 </div>

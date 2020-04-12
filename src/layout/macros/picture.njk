@@ -5,23 +5,27 @@
     }
 {% endmacro %}
 
-{% macro getSrcSet(imgVars, image, arFlag) %}
+{% macro getSrcSet(imgVars, image, arFlag, type) %}
     {%- for size in imgVars.sizes -%}
-        {{imgVars.server}}{{image}}.jpg?tr=w-{{size}}{{arFlag}} {{size}}w{%- if not loop.last %}, {% endif -%}
+        {{imgVars.server}}{{image}}.{{type}}?tr=w-{{size}}{{arFlag}} {{size}}w{%- if not loop.last %}, {% endif -%}
     {%- endfor -%}
 {% endmacro %}
 
-{% macro getSource(ar, breakpoint, image, imgVars) %}
+{% macro getSource(ar, breakpoint, image, imgVars, type) %}
     {% set arFlag = ',ar-' + ar %}
 
     <source
         type="image/jpeg"
-        data-srcset="{{ getSrcSet(imgVars, image, arFlag)}}"
+        data-srcset="{{ getSrcSet(imgVars, image, arFlag, type)}}"
         media="(min-width: {{breakpoint}}px)"
     />
 {% endmacro %}
 
-{% macro picture(image, alt, ar, s_ar, m_ar, l_ar, class, placeholder) %}
+{% macro picture(image, alt, ar, s_ar, m_ar, l_ar, class, placeholder, type) %}
+
+    {% if not type %}
+        {% set type = 'jpg' %}
+    {% endif %}
 
     {# Image values #}
     {% set imgVars = {
@@ -59,15 +63,15 @@
     <picture class="overflow-hidden {{class}}">
 
         {% if l_ar %}
-            {{ getSource(l_ar, imgVars.breakpoints[2], image, imgVars)}}
+            {{ getSource(l_ar, imgVars.breakpoints[2], image, imgVars, type)}}
         {% endif %}
 
         {% if m_ar %}
-            {{ getSource(m_ar, imgVars.breakpoints[1], image, imgVars)}}
+            {{ getSource(m_ar, imgVars.breakpoints[1], image, imgVars, type)}}
         {% endif %}
 
         {% if s_ar %}
-            {{ getSource(s_ar, imgVars.breakpoints[0], image, imgVars)}}
+            {{ getSource(s_ar, imgVars.breakpoints[0], image, imgVars, type)}}
         {% endif %}
 
         {# Set image info #}
@@ -77,8 +81,8 @@
 
         <img
             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-            data-srcset="{{ getSrcSet(imgVars, image, arFlag)}}"
-            data-src="{{imgVars.server}}{{image}}.jpg?tr=w-1024"
+            data-srcset="{{ getSrcSet(imgVars, image, arFlag, type)}}"
+            data-src="{{imgVars.server}}{{image}}.{{type}}?tr=w-1024"
             class="lazyload"
             data-sizes="auto"
             alt="{{alt}}"

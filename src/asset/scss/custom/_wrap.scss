@@ -1,4 +1,8 @@
-.wrap-huge {
-    @include atoms(center);
+.wrap {
+    @include atoms(ph3, m_ph6, center);
     max-width: 1400px;
+}
+
+.reading {
+    max-width: 700px;
 }

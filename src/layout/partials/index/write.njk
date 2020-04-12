@@ -1,32 +1,22 @@
-<h2 class="fw5 f4 m_f3 mb4">Write</h2>
-<ul class="m_grid m_grid-wide">
-    {% for post in write %}
-        <li class="l_col-6 {% if not loop.last %}mb4{% endif %}">
-            <a href="/write/{{post.basename}}.html" class="link-inherit db">
-                <div class="flex">
-                    <div class="w3 h3 m_w4 m_h4 flex-none mr3">
-                        {{ picture
-                            (
-                                image=post.fm.hero.thumb,
-                                alt=post.fm.hero.alt,
-                                ar="1-1",
-                                class="br2 mb2 stripe-bkg"
-                            )
-                        }}
+<div class="bg-gray-200 pv6 bb bt b-gray-300">
+    <div class="wrap">
+        <h2 class="blue mb4 fw8 f5 m_f4">Write</h2>
+        <ul class="m_grid m_grid-wide">
+            {% for post in write %}
+            <li class="l_col-4 {% if not loop.last %}mb4{% endif %}">
+                <a href="/write/{{post.basename}}.html" class="link-inherit db">
+                    <h3 class="f5 m_f4 fw8 lh-title mb1">
+                        {{post.fm.title}}
+                    </h3>
+                    <div class="black-300 lh-title mb1">
+                        {{post.fm.description}}
                     </div>
-                    <div class="flex-1">
-                        <h3 class="fw6 f6 -mt1 lh-title mb1">
-                            {{post.fm.title}}
-                        </h3>
-                        <div class="black-300 lh-title mb1">
-                            {{post.fm.description}}
-                        </div>
-                        <div class="f8 gray lh-copy">
-                            {{post.fm.date}}
-                        </div>
+                    <div class="f8 gray lh-copy">
+                        {{post.fm.date}}
                     </div>
-                </div>
-            </a>
-        </li>
-    {% endfor %}
-</ul>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
