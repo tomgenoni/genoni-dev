@@ -1,29 +1,31 @@
 
-<div class="wrap mb7" id="work">
+<div class="mb7" id="work">
     <ul>
         {% for entry in work %}
             <li id="{{entry.basename}}" {% if not loop.last %}class="mb7"{% endif %}>
-                <div class="mb4">
+                <div class="mb4 wrap-left">
                     {% include "partials/index/roll.njk" %}
                 </div>
-                <h3 class="f4 m_f3 fw5 mb3 lh-solid">
-                    {{entry.fm.title}}
-                </h3>
-                <div class="markdown reading">
-                    {{entry.body | safe}}
+                <div class="wrap">
+                    <h3 class="f4 m_f3 fw5 mb3 lh-solid">
+                        {{entry.fm.title}}
+                    </h3>
+                    <div class="markdown reading">
+                        {{entry.body | safe}}
+                    </div>
+                    <ol class="flex f6">
+                        {% for link in entry.fm.links %}
+                            <li>
+                                <a class="link link-external fw5 white" href="{{link.url}}">
+                                    {{link.title}}
+                                </a>
+                                {% if not loop.last %}
+                                    <span class="mh2 white op-6">/</span>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ol>
                 </div>
-                <ol class="flex f6">
-                    {% for link in entry.fm.links %}
-                        <li>
-                            <a class="link link-external fw5 white" href="{{link.url}}">
-                                {{link.title}}
-                            </a>
-                            {% if not loop.last %}
-                                <span class="mh2 white op-6">/</span>
-                            {% endif %}
-                        </li>
-                    {% endfor %}
-                </ol>
             </li>
         {% endfor %}
     </ul> 

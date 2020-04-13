@@ -10,6 +10,10 @@
         margin-left: -$space__6;
         margin-right: -$space__6;
     }
+
+    @include respond-above($break__xlarge) {
+        margin-right: 0;
+    }
 }
 
 .roll-wrap {

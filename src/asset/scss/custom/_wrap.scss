@@ -1,6 +1,22 @@
 .wrap {
     @include atoms(ph3, m_ph6, center);
-    max-width: 1400px;
+    max-width: $break__xlarge;
+
+    @include respond-above($break__xlarge) {
+        max-width: none;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+.wrap-left {
+    @include atoms(wrap);
+
+    @include respond-above($break__xlarge) {
+        max-width: none;
+        padding-left: 5%;
+        padding-right: 0;
+    }
 }
 
 .reading {
