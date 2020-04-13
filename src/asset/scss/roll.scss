@@ -18,7 +18,11 @@
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     margin-bottom: -30px; // Cover scrollbar
-    padding-left: $space__3 + $space__5;
+
+    @include respond-above($break__medium) {
+        padding-left: $space__3 + $space__5;
+    }
+
 }
 
 .roll-pane {
@@ -42,8 +46,14 @@
     // Hack to make room after the last scrollable item.
     &:last-child:after {
         content: ' ';
-        width: $space__6;
-        height: $space__6;
+        width: $space__3;
+        height: $space__3;
+
+        @include respond-above($break__medium) {
+            width: $space__6;
+            height: $space__6;
+        }
+
         position: absolute;
         top: 0;
         left: 100%;
