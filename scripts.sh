@@ -28,13 +28,11 @@ function clean() {
 function css:scss() {
     echo 'css:'
     node-sass -q src/asset/scss/root.scss tmp/root.css && \
-    node-sass -q src/asset/scss/roll.scss tmp/roll.css && \
     echo '  ✔ scss'
 }
 
 function css:postcss() {
     postcss tmp/root.css --no-map --use css-mqpacker cssnano -o dist/asset/css/root.css && \
-    postcss tmp/roll.css --no-map --use cssnano -o dist/asset/css/roll.css && \
     echo '  ✔ postcss'
 }
 
@@ -92,7 +90,6 @@ function minify() {
     html-minifier --input-dir ./dist/ --output-dir ./dist/ --file-ext html --collapse-whitespace --minify-css true && \
     echo '  ✔ html'
     # Minify js, leave name same so it works for both dev & prod
-    node-minify -c uglify-es -i ./dist/asset/js/roll.js -o ./dist/asset/js/roll.js -s &&\
     node-minify -c uglify-es -i ./dist/asset/js/instantpage.js -o ./dist/asset/js/instantpage.js -s &&\
     echo '  ✔ js'
 }

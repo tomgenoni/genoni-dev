@@ -1,5 +1,6 @@
 .hero {
     height: 70vh;
+    min-height: 400px;
 
     @include respond-above($break__medium) {
         height: 40vh;

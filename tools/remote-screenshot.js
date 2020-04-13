@@ -1,4 +1,5 @@
-// Usage: yarn screenshot_remote https://thumbtack.com
+// Usage: yarn screenshot_remote 'https://thumbtack.com'
+// Use with quotes to prevent special character recognition, like &
 
 const Pageres = require('pageres');
 const sharp = require('sharp');

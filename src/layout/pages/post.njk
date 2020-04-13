@@ -1,10 +1,17 @@
 {% from "../macros/picture.njk" import picture %}
-{% set bodyClass = "post" %}
+{% set htmlClass = "post" %}
 
 {% include "partials/common/head.njk" %}
 
 <div class="wrap pb5">
     {% include "partials/common/header.njk" %}
+
+
+    <div class="mb5 mt6">
+        <div class="f7 fw6 gray">{{fm.date}}</div>
+        <h1 class="f2 m_f0 lh-solid fw8 mb1 black">{{fm.title}}</h1>
+        <div class="f3 m_f2 lh-solid fw3 gray m_-ls1">{{fm.description}}</div>        
+    </div>        
 
     {{ picture
         (
@@ -13,21 +20,14 @@
             ar="1-1",
             s_ar="8-5",
             l_ar="2-1",
-            class="stripe-bkg mv4"
+            class="stripe-bkg mv5"
         )
     }}
 
-    <div class="center reading">
-        <div class="mb5">
-            <div class="bg-indigo white pv1 ph2 f9 ttu fw6 ls2 lh-even dib br1 mb1">Write</div>
-            <div class="mb3 m_mb4 f7 gray">{{fm.date}}</div>
-            <h1 class="f2 m_f1 lh-solid fw8 mb1">{{fm.title}}</h1>
-            <div class="f3 m_f2 lh-solid fw3 gray m_-ls1">{{fm.description}}</div>        
-        </div>        
-    </div>        
     <div class="markdown markdown-post">
         {{body | safe}}
-    </div>        
+    </div>         
 </div>
 
+{% include "partials/common/footer.njk" %}
 {% include "partials/common/foot.njk" %}

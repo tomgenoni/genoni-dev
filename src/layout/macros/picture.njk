@@ -1,7 +1,7 @@
 {% macro getPlaceholder(value, breakpoint, name) %}
     {% set padding = value.split("-")[1] + '/' + value.split("-")[0] + ' * 100%'  %}
     @media(min-width: {{breakpoint}}px){
-        #image-{{name}} { padding-top: calc({{padding}}); }
+        .image-{{name}} { padding-top: calc({{padding}}); }
     }
 {% endmacro %}
 
@@ -83,10 +83,9 @@
             src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
             data-srcset="{{ getSrcSet(imgVars, image, arFlag, type)}}"
             data-src="{{imgVars.server}}{{image}}.{{type}}?tr=w-1024"
-            class="lazyload"
+            class="lazyload image-{{image}}"
             data-sizes="auto"
             alt="{{alt}}"
-            id="image-{{image}}"
         />
     </picture>
 

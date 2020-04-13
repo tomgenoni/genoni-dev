@@ -2,7 +2,7 @@
 {% set description = fm.description | default("The portfolio of Tom Genoni, a design technologist living in San Francisco.") %}
 {% set ogImage = fm.hero.image | default("skills-hero") %}
 
-<html lang="en" class="bg-indigo">
+<html lang="en" {% if htmlClass %}class="{{htmlClass}}"{% endif %}>
     <head>
         <title>{% if fm.title %}{{fm.title}} • {% endif %}Tom Genoni • Design Technologist</title>
 
@@ -60,4 +60,4 @@
         <link rel="stylesheet" href="/asset/css/root.css" type="text/css" />
         <script type="text/javascript" src="/asset/js/lazysizes.min.js" async></script>
     </head>
-    <body {% if bodyClass %}class="{{bodyClass}}"{% endif %}>
+    <body>

@@ -1,3 +1,7 @@
+html {
+    background: $color__white;
+}
+
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -5,11 +9,21 @@ body {
     font-weight: 400;
     line-height: 1.6;
     font-size: $f6;
-    color: white;
+    color: $color__black-300;
 }
 
 :root {
     --stripe-color: #ddd;
+}
+
+
+.index {
+    --stripe-color: #6169a9;
+    background: $color__indigo;
+
+    body {
+        color: $color__white;
+    }
 }
 
 .stripe-bkg {

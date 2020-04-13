@@ -28,7 +28,7 @@
     ol,
     p,
     ul {
-        @include atoms(mb3, white);
+        @include atoms(mb3);
     }
 
     >img,
@@ -95,18 +95,14 @@
         font-size: 18px; // Custom size
     }
 
-    >p,
-    >ol,
-    >ul,
-    >table,
-    >pre,
-    >h1,
-    >h2,
-    >h3,
-    >h4,
-    >h5 {
-        @include atoms(center);
+    a {
+        border-color: #bbb;
+
+        &:hover {
+            border-color: $color__indigo;
+        }
     }
+
 
     blockquote {
         @include atoms(bl, bw-4, b-gray-300, pl3, mv4);
@@ -114,7 +110,7 @@
 
     // Larger, feature blockquote
     .pullquote {
-        @include atoms(mv5, m_relative, l_mh7);
+        @include atoms(mv5, reading-wide, relative);
 
         p {
             @include atoms(f3, m_f2, sans, lh-title, mb0, -ls2);

@@ -1,8 +1,8 @@
 
-<div class="mb7" id="work">
+<div id="work">
     <ul>
         {% for entry in work %}
-            <li id="{{entry.basename}}" {% if not loop.last %}class="mb7"{% endif %}>
+            <li id="{{entry.basename}}" class="mb7">
                 <div class="mb4 wrap-left">
                     {% include "partials/index/roll.njk" %}
                 </div>
@@ -13,18 +13,20 @@
                     <div class="markdown reading">
                         {{entry.body | safe}}
                     </div>
-                    <ol class="flex f6">
-                        {% for link in entry.fm.links %}
-                            <li>
-                                <a class="link link-external fw5 white" href="{{link.url}}">
-                                    {{link.title}}
-                                </a>
-                                {% if not loop.last %}
-                                    <span class="mh2 white op-6">/</span>
-                                {% endif %}
-                            </li>
-                        {% endfor %}
-                    </ol>
+                    {% if entry.fm.links %}
+                        <ol class="flex f6">
+                            {% for link in entry.fm.links %}
+                                <li>
+                                    <a class="link link-external fw5" href="{{link.url}}">
+                                        {{link.title}}
+                                    </a>
+                                    {% if not loop.last %}
+                                        <span class="mh2 white op-6">/</span>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ol>
+                    {% endif %}
                 </div>
             </li>
         {% endfor %}

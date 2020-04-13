@@ -1,19 +1,21 @@
-{% set bodyClass = "index" %}
+{% set htmlClass = "index" %}
 
 {% from "../macros/picture.njk" import picture %}
 
 {% include "partials/common/head.njk" %}
 
-<div class="bg-indigo white">
-    <div class="wrap">
-        {% include "partials/common/header.njk" %}
-        {% include "partials/index/hero.njk" %}
-    </div>
+<div class="wrap">
+    {% include "partials/common/header.njk" %}
+    {% include "partials/index/hero.njk" %}
 </div>
 
 {% include "partials/index/work.njk" %}
-{% include "partials/index/write.njk" %}
-{% include "partials/index/about.njk" %}
 
-<script type="text/javascript" src="/asset/js/roll.js"></script>
+<div class="wrap mb6">
+    <div class="stripe-bkg h1 mb5"></div>
+</div>
+
+{% include "partials/index/write.njk" %}
+
+{% include "partials/common/footer.njk" %}
 {% include "partials/common/foot.njk" %}

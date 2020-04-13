@@ -1,0 +1,9 @@
+footer {
+    a {
+        color: inherit;
+    }
+}
+
+.index footer a {
+    color: $color__white;
+}
