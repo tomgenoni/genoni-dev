@@ -2,7 +2,7 @@
 <div id="work">
     <ul>
         {% for entry in work %}
-            <li id="{{entry.basename}}" class="mb7">
+            <li id="{{entry.basename}}" class="mb6 m_mb7">
                 <div class="mb4 wrap-left">
                     {% include "partials/index/roll.njk" %}
                 </div>
@@ -14,15 +14,12 @@
                         {{entry.body | safe}}
                     </div>
                     {% if entry.fm.links %}
-                        <ol class="flex f6">
+                        <ol class="f6">
                             {% for link in entry.fm.links %}
                                 <li>
                                     <a class="link link-external fw5" href="{{link.url}}">
                                         {{link.title}}
                                     </a>
-                                    {% if not loop.last %}
-                                        <span class="mh2 white op-6">/</span>
-                                    {% endif %}
                                 </li>
                             {% endfor %}
                         </ol>
