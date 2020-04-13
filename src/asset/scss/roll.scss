@@ -3,8 +3,8 @@
 
 .roll-rail {
     overflow: hidden;
-    margin-left: -$space__3;
-    margin-right: -$space__3;
+    margin-left: -$space__4;
+    margin-right: -$space__4;
 
     @include respond-above($break__medium) {
         margin-left: -$space__6;
@@ -20,7 +20,7 @@
     margin-bottom: -30px; // Cover scrollbar
 
     @include respond-above($break__medium) {
-        padding-left: $space__3 + $space__5;
+        padding-left: 42px;
     }
 
 }
@@ -28,7 +28,7 @@
 .roll-pane {
     display: flex;
     position: relative;
-    padding-left: $space__3; // Space between items
+    padding-left: $space__4; // Space between items
     padding-bottom: 30px;
     width: 84%;
     min-width: 84%;
@@ -46,8 +46,8 @@
     // Hack to make room after the last scrollable item.
     &:last-child:after {
         content: ' ';
-        width: $space__3;
-        height: $space__3;
+        width: $space__4;
+        height: $space__4;
 
         @include respond-above($break__medium) {
             width: $space__6;
