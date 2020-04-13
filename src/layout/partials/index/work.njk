@@ -1,6 +1,6 @@
-<div class="pv6">
+<div class="pv6" id="work">
     <div class="wrap">
-    <h2 class="indigo mb4 fw8 f5 m_f4">Work</h2>
+        <h2 class="indigo mb4 fw8 f5 m_f4">Work</h2>
         <ul>
             {% for entry in work %}
                 <li id="{{entry.basename}}" {% if not loop.last %}class="mb6"{% endif %}>

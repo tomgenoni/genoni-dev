@@ -1,0 +1,9 @@
+header {
+    a {
+        color: inherit;
+    }
+}
+
+.index header a {
+    color: $color__white;
+}
