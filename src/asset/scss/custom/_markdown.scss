@@ -1,12 +1,12 @@
 .markdown {
     a {
-        border-bottom: 1px solid #bbb;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
         color: inherit;
         padding-bottom: 2px;
         transition: border-color 0.2s;
 
         &:hover {
-            border-color: $color__indigo;
+            border-color: $color__white;
             transition: border-color 0.2s;
         }
     }
@@ -28,7 +28,7 @@
     ol,
     p,
     ul {
-        @include atoms(mb3, black-300);
+        @include atoms(mb3, white);
     }
 
     >img,

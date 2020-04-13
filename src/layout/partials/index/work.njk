@@ -1,32 +1,30 @@
-<div class="pv6" id="work">
-    <div class="wrap">
-        <h2 class="indigo mb4 fw8 f5 m_f4">Work</h2>
-        <ul>
-            {% for entry in work %}
-                <li id="{{entry.basename}}" {% if not loop.last %}class="mb6"{% endif %}>
-                    <h3 class="f4 m_f3 fw8 mb4 lh-solid">
-                        {{entry.fm.title}}
-                    </h3>
-                    <div class="mb4">
-                        {% include "partials/index/roll.njk" %}
-                    </div>
-                    <div class="markdown reading">
-                        {{entry.body | safe}}
-                    </div>
-                    <ol class="flex f6">
-                        {% for link in entry.fm.links %}
-                            <li>
-                                <a class="link link-external fw6" href="{{link.url}}">
-                                    {{link.title}}
-                                </a>
-                                {% if not loop.last %}
-                                    <span class="mh2 gray">•</span>
-                                {% endif %}
-                            </li>
-                        {% endfor %}
-                    </ol>
-                </li>
-            {% endfor %}
-        </ul> 
-    </div>
+
+<div class="wrap mb7" id="work">
+    <ul>
+        {% for entry in work %}
+            <li id="{{entry.basename}}" {% if not loop.last %}class="mb7"{% endif %}>
+                <div class="mb4">
+                    {% include "partials/index/roll.njk" %}
+                </div>
+                <h3 class="f4 m_f3 fw5 mb3 lh-solid">
+                    {{entry.fm.title}}
+                </h3>
+                <div class="markdown reading">
+                    {{entry.body | safe}}
+                </div>
+                <ol class="flex f6">
+                    {% for link in entry.fm.links %}
+                        <li>
+                            <a class="link link-external fw5 white" href="{{link.url}}">
+                                {{link.title}}
+                            </a>
+                            {% if not loop.last %}
+                                <span class="mh2 white op-6">/</span>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ol>
+            </li>
+        {% endfor %}
+    </ul> 
 </div>

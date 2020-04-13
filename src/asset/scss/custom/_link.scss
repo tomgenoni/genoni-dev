@@ -1,6 +1,6 @@
 .link,
 .link a {
-    @include atoms(black, hover-red);
+    @include atoms(white);
 }
 
 .link-inherit {
