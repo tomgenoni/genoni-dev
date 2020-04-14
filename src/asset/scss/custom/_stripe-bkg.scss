@@ -1,0 +1,19 @@
+:root {
+    --stripe-color: rgba(0, 0, 0, .15);
+}
+
+.index {
+    --stripe-color: rgba(255, 255, 255, .2);
+}
+
+.stripe-bkg {
+    background-image: linear-gradient(45deg,
+            var(--stripe-color) 4.55%,
+            transparent 4.55%,
+            transparent 50%,
+            var(--stripe-color) 50%,
+            var(--stripe-color) 54.55%,
+            transparent 54.55%,
+            transparent 100%);
+    background-size: 15.56px 15.56px;
+}
