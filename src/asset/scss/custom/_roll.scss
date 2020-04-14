@@ -4,7 +4,7 @@
     margin-right: -$space__4;
 
     @include respond-above($break__medium) {
-        margin-left: -$space__6;
+        margin-left: calc(-5% - 72px);
         margin-right: -$space__6;
     }
 
@@ -21,7 +21,7 @@
     margin-bottom: -30px; // Cover scrollbar
 
     @include respond-above($break__medium) {
-        padding-left: 42px;
+        padding-left: calc(5% + 42px);
     }
 
 }
