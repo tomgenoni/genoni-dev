@@ -4,8 +4,8 @@
 
     @include respond-above($break__xlarge) {
         max-width: none;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 7%;
+        padding-right: 7%;
     }
 }
 
@@ -14,7 +14,7 @@
 
     @include respond-above($break__xlarge) {
         max-width: none;
-        padding-left: 5%;
+        padding-left: 7%;
         padding-right: 0;
     }
 }

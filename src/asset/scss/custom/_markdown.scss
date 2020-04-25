@@ -37,7 +37,7 @@
     }
 
     .caption {
-        @include atoms(reading, f7, mb4, -mt3, black-300);
+        @include atoms(reading, f7, mb4, -mt3, black-300, lh-copy);
     }
 
     h2,
@@ -93,6 +93,12 @@
 
     @include respond-above($break__medium) {
         font-size: 18px; // Custom size
+    }
+
+    p,
+    ul,
+    ol {
+        font-family: $serif;
     }
 
     a {

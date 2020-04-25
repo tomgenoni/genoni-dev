@@ -3,25 +3,27 @@
 
 {% include "partials/common/head.njk" %}
 
-<div class="wrap pb5">
+<div class="wrap">
     {% include "partials/common/header.njk" %}
+</div>
 
+{{ picture
+    (
+        image=fm.hero.image,
+        alt=fm.hero.alt,
+        ar="1-1",
+        s_ar="8-5",
+        l_ar="2-1",
+        class="stripe-bkg mb5"
+    )
+}}
+
+<div class="wrap pb5">
     <div class="mb5 mt5 m_mt6">
+        <div class="f7 black-300 fw5 bb b-inidgo bw-3 dib mb4">{{fm.date}}</div>
         <h1 class="f2 m_f0 lh-solid fw8 mb1 black">{{fm.title}}</h1>
         <div class="f3 m_f2 lh-solid fw3 gray m_-ls1 mb3">{{fm.description}}</div>        
-        <div class="f7 gray">{{fm.date}}</div>
     </div>        
-
-    {{ picture
-        (
-            image=fm.hero.image,
-            alt=fm.hero.alt,
-            ar="1-1",
-            s_ar="8-5",
-            l_ar="2-1",
-            class="stripe-bkg mv5"
-        )
-    }}
 
     <div class="markdown markdown-post">
         {{body | safe}}
