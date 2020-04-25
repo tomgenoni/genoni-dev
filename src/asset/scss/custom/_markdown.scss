@@ -119,11 +119,11 @@
         @include atoms(mv5, reading-wide, relative);
 
         p {
-            @include atoms(f3, m_f2, sans, lh-title, mb0, -ls2);
+            @include atoms(f3, m_f2, sans, lh-copy, mb0, -ls2, serif);
 
             &:before,
             &:after {
-                @include atoms(fw7, serif);
+                @include atoms(fw7, serif, op-6);
             }
 
             &:before {
@@ -142,7 +142,7 @@
         }
 
         .credit {
-            @include atoms(f7, black-300, db, pt3);
+            @include atoms(f7, black-300, db, pt3, fw5);
 
             &:before {
                 @include atoms(bg-indigo);
