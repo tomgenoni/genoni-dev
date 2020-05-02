@@ -92,7 +92,7 @@
     @include atoms(f6);
 
     @include respond-above($break__medium) {
-        font-size: 18px; // Custom size
+        font-size: $f5;
     }
 
     p,
@@ -102,7 +102,7 @@
     }
 
     a {
-        border-color: #bbb;
+        border-color: rgba($color__indigo, .5);
 
         &:hover {
             border-color: $color__indigo;
@@ -119,11 +119,11 @@
         @include atoms(mv5, reading-wide, relative);
 
         p {
-            @include atoms(f3, m_f2, sans, lh-copy, mb0, -ls2, serif);
+            @include atoms(f3, m_f2, sans, lh-copy, mb0, -ls2);
 
             &:before,
             &:after {
-                @include atoms(fw7, serif, op-6);
+                @include atoms(fw7, op-6);
             }
 
             &:before {
