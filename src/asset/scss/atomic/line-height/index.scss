@@ -1,82 +1,85 @@
 .lh-even {
-    line-height: 1;
+    line-height: $line-height__even;
 }
 
 .lh-solid {
-    line-height: 1.1;
+    line-height: $line-height__solid;
 }
 
 .lh-title {
-    line-height: 1.25;
+    line-height: $line-height__title;
 }
 
 .lh-copy {
-    line-height: 1.45;
+    line-height: $line-height__copy;
 }
 
 .lh-base {
-    line-height: 1.6;
+    line-height: $line-height__base;
 }
+
 @include respond-above($break__small) {
     .s_lh-even {
-        line-height: 1;
+        line-height: $line-height__even;
     }
 
     .s_lh-solid {
-        line-height: 1.1;
+        line-height: $line-height__solid;
     }
 
     .s_lh-title {
-        line-height: 1.25;
+        line-height: $line-height__title;
     }
 
     .s_lh-copy {
-        line-height: 1.45;
+        line-height: $line-height__copy;
     }
 
     .s_lh-base {
-        line-height: 1.6;
+        line-height: $line-height__base;
     }
 }
+
 @include respond-above($break__medium) {
     .m_lh-even {
-        line-height: 1;
+        line-height: $line-height__even;
     }
 
     .m_lh-solid {
-        line-height: 1.1;
+        line-height: $line-height__solid;
     }
 
     .m_lh-title {
-        line-height: 1.25;
+        line-height: $line-height__title;
     }
 
     .m_lh-copy {
-        line-height: 1.45;
+        line-height: $line-height__copy;
     }
 
     .m_lh-base {
-        line-height: 1.6;
+        line-height: $line-height__base;
     }
 }
+
 @include respond-above($break__large) {
     .l_lh-even {
-        line-height: 1;
+        line-height: $line-height__even;
     }
 
     .l_lh-solid {
-        line-height: 1.1;
+        line-height: $line-height__solid;
     }
 
     .l_lh-title {
-        line-height: 1.25;
+        line-height: $line-height__title;
     }
 
     .l_lh-copy {
-        line-height: 1.45;
+        line-height: $line-height__copy;
     }
 
     .l_lh-base {
-        line-height: 1.6;
+        line-height: $line-height__base;
     }
 }
