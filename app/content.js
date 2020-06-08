@@ -23,22 +23,29 @@ marked.setOptions({
     },
 });
 
+var env = new nunjucks.Environment(new nunjucks.FileSystemLoader('./src/layout'));
+
 // Nunjucks root template/partials path with global vars
-nunjucks.configure('./src/layout').addGlobal('urls', {
+env.addGlobal('urls', {
     site: vars.urls.site,
     imageKit: vars.urls.imageKit,
     imageKitCode: vars.urls.imageKitCode,
-});
+})
+
+env.addFilter('md', function (val, cb) {
+    console.log("safd")
+    return marked(val.val)
+}, false);
 
 // Functions
 // -----------------------
 
 function buildPages() {
-    var rootTemplate = nunjucks.render('pages/index.njk', vars.postData);
+    var rootTemplate = env.render('pages/index.njk', vars.postData);
     writeFile(rootTemplate, './dist/index.html');
 
     vars.postData.write.forEach((post) => {
-        var postTemplate = nunjucks.render('pages/post.njk', post);
+        var postTemplate = env.render('pages/post.njk', post);
         writeFile(postTemplate, vars.path.dist.write + post.basename + '.html');
     });
 }
@@ -56,7 +63,7 @@ function getContent(files) {
         const content = fs.readFileSync(file, 'utf8').toString(); // all content of file
         const filedata = fm(content); // convert file to object with front-matter
         const markdown = marked(filedata.body); // convert body to markdown
-        const body = nunjucks.renderString(markdown); // convert any Nunjuck macros
+        const body = env.renderString(markdown); // convert any Nunjuck macros
 
         var o = {
             basename: basename,
