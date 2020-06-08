@@ -95,12 +95,6 @@
         font-size: $f5;
     }
 
-    p,
-    ul,
-    ol {
-        font-family: $serif;
-    }
-
     a {
         border-color: rgba($color__black, .3);
 
@@ -119,7 +113,7 @@
         @include atoms(mv5, reading-wide, relative);
 
         p {
-            @include atoms(f3, m_f2, sans, lh-copy, mb0, -ls2);
+            @include atoms(f3, m_f2, lh-copy, mb0, -ls2);
 
             &:before,
             &:after {
