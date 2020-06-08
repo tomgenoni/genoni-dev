@@ -33,7 +33,6 @@ env.addGlobal('urls', {
 })
 
 env.addFilter('md', function (val, cb) {
-    console.log("safd")
     return marked(val.val)
 }, false);
 
