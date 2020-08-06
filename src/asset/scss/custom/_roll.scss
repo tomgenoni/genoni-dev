@@ -23,7 +23,6 @@
     @include respond-above($break__medium) {
         padding-left: calc(5% + 42px);
     }
-
 }
 
 .roll-pane {
@@ -40,8 +39,8 @@
     }
 
     @include respond-above($break__large) {
-        width: 42%;
-        min-width: 42%;
+        width: 60%;
+        min-width: 60%;
     }
 
     // Hack to make room after the last scrollable item.
