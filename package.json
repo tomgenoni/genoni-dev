@@ -33,7 +33,7 @@
         "glob": "^7.1.2",
         "html-minifier": "^4.0.0",
         "instant.page": "^3.0.0",
-        "lazysizes": "^5.2.0",
+        "lazysizes": "^5.2.1",
         "marked": "^0.8.1",
         "node-minify": "^3.6.0",
         "node-sass": "^4.13.1",
