@@ -1,6 +1,6 @@
 .markdown {
     a {
-        border-bottom: 1px solid rgba(255, 255, 255, .3);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         color: inherit;
         padding-bottom: 2px;
         transition: border-color 0.2s;
@@ -11,17 +11,17 @@
         }
     }
 
-    >p,
-    >ol,
-    >ul,
-    >table,
-    >pre,
-    >h1,
-    >h2,
-    >h3,
-    >h4,
-    >h5,
-    >blockquote {
+    > p,
+    > ol,
+    > ul,
+    > table,
+    > pre,
+    > h1,
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > blockquote {
         @include atoms(reading);
     }
 
@@ -31,8 +31,8 @@
         @include atoms(mb3);
     }
 
-    >img,
-    >picture {
+    > img,
+    > picture {
         @include atoms(mv3, m_mv4);
     }
 
@@ -53,12 +53,12 @@
         @include atoms(f6, m_f4);
     }
 
-    ul>li {
+    ul > li {
         @include atoms(ml4, mb2);
         list-style-type: disc;
     }
 
-    ol>li {
+    ol > li {
         @include atoms(ml4, mb2);
         list-style-type: decimal;
     }
@@ -88,7 +88,6 @@
 }
 
 .markdown-post {
-
     @include atoms(f6);
 
     @include respond-above($break__medium) {
@@ -96,13 +95,12 @@
     }
 
     a {
-        border-color: rgba($color__black, .3);
+        border-color: rgba($color__black, 0.3);
 
         &:hover {
             border-color: $color__indigo;
         }
     }
-
 
     blockquote {
         @include atoms(bl, bw-4, b-gray-300, pl3, mv4);
@@ -113,7 +111,9 @@
         @include atoms(mv5, reading-wide, relative);
 
         p {
-            @include atoms(f3, m_f2, lh-copy, mb0, -ls2);
+            @include atoms(f3, m_f2, lh-copy, mb0, -ls1);
+            font-family: $serif;
+            font-style: italic;
 
             &:before,
             &:after {
@@ -151,7 +151,7 @@
 
     // Code
 
-    :not(pre)>code {
+    :not(pre) > code {
         @include atoms(fw5, ba, b-gray-300, br2, bg-white);
         font-size: 0.85em;
         font-family: 'Source Code Pro', monospace;
