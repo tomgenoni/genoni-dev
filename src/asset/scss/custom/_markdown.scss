@@ -111,7 +111,7 @@
         @include atoms(mv5, reading-wide, relative);
 
         p {
-            @include atoms(f3, m_f2, lh-copy, mb0, -ls1);
+            @include atoms(f3, m_f2, lh-copy, mb0);
             font-family: $serif;
             font-style: italic;
 
