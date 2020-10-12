@@ -111,13 +111,12 @@
         @include atoms(mv5, reading-wide, relative);
 
         p {
-            @include atoms(f3, m_f2, lh-copy, mb0);
+            @include atoms(f3, m_f2, lh-title, mb0);
             font-family: $serif;
-            font-style: italic;
 
             &:before,
             &:after {
-                @include atoms(fw7, op-6);
+                @include atoms(fw7);
             }
 
             &:before {
