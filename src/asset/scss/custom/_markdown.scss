@@ -94,6 +94,12 @@
     font-size: $f5;
   }
 
+  p,
+  ul,
+  ol {
+    font-family: $serif;
+  }
+
   a {
     border-color: rgba($color__black, 0.3);
 
