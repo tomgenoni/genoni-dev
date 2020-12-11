@@ -90,6 +90,20 @@
 .markdown-post {
   @include atoms(f6);
 
+  > p,
+  > ol,
+  > ul,
+  > table,
+  > pre,
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > blockquote {
+    margin: auto;
+  }
+
   @include respond-above($break__medium) {
     font-size: $f5;
   }
@@ -98,6 +112,10 @@
   ul,
   ol {
     font-family: $serif;
+  }
+
+  strong {
+    font-family: $sans;
   }
 
   a {
@@ -114,50 +132,29 @@
 
   // Larger, feature blockquote
   .pullquote {
-    @include atoms(mv5, reading-wide, relative);
+    @include atoms(mv6, center, reading-wide, relative, tc);
+
+    &:before {
+      @include atoms(serif, indigo, db, fw7);
+      content: '”';
+      font-size: 100px;
+      line-height: 0.3;
+    }
 
     p {
-      @include atoms(f3, m_f2, lh-title, mb0);
-      font-family: $serif;
-
-      &:before,
-      &:after {
-        @include atoms(fw7);
-      }
-
-      &:before {
-        content: '“';
-
-        // Position the hanging quote only above medium.
-        @include respond-above($break__medium) {
-          position: absolute;
-          left: -0.6em;
-        }
-      }
-
-      &:after {
-        content: '”';
-      }
+      @include atoms(f3, m_f2, lh-title, mb4, -ls1);
+      font-family: $sans;
     }
 
     .credit {
-      @include atoms(f7, black-300, db, pt3, fw5);
-
-      &:before {
-        @include atoms(bg-indigo);
-        content: '';
-        height: 2px;
-        width: 30px;
-        display: block;
-        margin-bottom: $space__2;
-      }
+      @include atoms(f7, db, pv2, ph3, fw5, dib, bg-indigo, white, br-pill);
     }
   }
 
   // Code
 
   :not(pre) > code {
-    @include atoms(fw5, ba, b-gray-300, br2, bg-white);
+    @include atoms(fw5, bg-gray-300, br2, bg-white);
     font-size: 0.85em;
     font-family: 'Source Code Pro', monospace;
     padding: 0 4px 2px;

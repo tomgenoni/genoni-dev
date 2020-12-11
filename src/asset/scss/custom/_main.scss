@@ -21,3 +21,11 @@ body {
     color: $color__white;
   }
 }
+
+.post-title {
+  font-size: 40px;
+
+  @include respond-above($break__medium) {
+    font-size: 66px;
+  }
+}
