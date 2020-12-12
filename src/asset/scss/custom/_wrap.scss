@@ -1,28 +1,32 @@
 .wrap {
-    @include atoms(ph3, m_ph6, center);
-    max-width: $break__xlarge;
+  @include atoms(ph3, m_ph6, center);
+  max-width: $break__xlarge;
 
-    @include respond-above($break__xlarge) {
-        max-width: none;
-        padding-left: 7%;
-        padding-right: 7%;
-    }
+  @include respond-above($break__xlarge) {
+    max-width: none;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
 }
 
 .wrap-left {
-    @include atoms(wrap);
+  @include atoms(wrap);
 
-    @include respond-above($break__xlarge) {
-        max-width: none;
-        padding-left: 7%;
-        padding-right: 0;
-    }
+  @include respond-above($break__xlarge) {
+    max-width: none;
+    padding-left: 7%;
+    padding-right: 0;
+  }
 }
 
 .reading {
-    max-width: 768px;
+  max-width: 768px;
 }
 
 .reading-wide {
-    max-width: 1000px;
+  max-width: 1000px;
+}
+
+.post-image {
+  max-width: 1200px;
 }

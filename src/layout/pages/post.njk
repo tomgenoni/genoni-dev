@@ -7,12 +7,13 @@
 </div>
 
 <div class="wrap pb5">
-    <div class="mb5 mt5 m_mt6 tc">
-        <h1 class="post-title lh-solid fw7 mb1 black serif">{{fm.title}}</h1>
-        <div class="f3 m_f2 lh-solid fw3 gray m_-ls1 mb3">{{fm.description}}</div>        
-        <div class="f8 black-300 fw5 bb b-indigo bw-3 dib mb3 m_mb4 pb1">{{fm.date}}</div>
+    <div class="mb6 mt5 m_mt5 tc">
+        <h1 class="post-title lh-solid fw7 mb3 black serif">{{fm.title}}</h1>
+        <div class="f4 m_f3 lh-title fw3 gray mb3 center reading">{{fm.description}}</div>        
+        <div class="f8 gray fw5 ttu">{{fm.date}}</div>
     </div>        
 
+{% if fm.hero %}
 {{ picture
     (
         image=fm.hero.image,
@@ -20,10 +21,10 @@
         ar="1-1",
         s_ar="4-3",
         l_ar="8-5",
-        class="stripe-bkg reading-wide center mb5"
+        class="stripe-bkg post-image center mb6"
     )
 }}
-
+{% endif %}
 
     <div class="markdown markdown-post">
         {{body | safe}}
