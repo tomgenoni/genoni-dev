@@ -42,7 +42,7 @@
 
   h2,
   h3 {
-    @include atoms(mb3, pt4, fw5, pt3, lh-title, black);
+    @include atoms(mb3, pt4, fw6, pt3, lh-title, black);
   }
 
   h2 {
@@ -129,7 +129,7 @@
     }
 
     .credit {
-      @include atoms(f7, black-300, db, pt3, fw5);
+      @include atoms(f7, black-300, db, pt3, fw6);
 
       &:before {
         @include atoms(bg-indigo);
@@ -145,7 +145,8 @@
   // Code
 
   :not(pre) > code {
-    @include atoms(fw5, ba, b-gray-300, br2, bg-white);
+    @include atoms(ba, b-gray-300, br2, bg-white);
+    font-weight: 500;
     font-size: 0.85em;
     font-family: 'Source Code Pro', monospace;
     padding: 0 4px 2px;

@@ -1,51 +1,25 @@
 // The 400 & 800 @font-face declarations are in the <head> tag.
 // This moves the font loading earlier in the process.
-
-@font-face {
-    font-family: 'Graphik';
-    font-weight: 300;
-    src: url('/asset/font/Graphik-Light-Web.woff2') format('woff2'),
-        url('/asset/font/Graphik-Light-Web.woff') format('woff');
-    font-display: swap;
-}
-
 // @font-face {
-//     font-family: "Graphik";
+//     font-family: "Alliance";
 //     font-weight: 400;
-//     src: url("/asset/font/Graphik-Regular-Web.woff2") format("woff2"),
-//         url("/asset/font/Graphik-Regular-Web.woff") format("woff");
+//     src: url("/asset/font/Alliance-Regular-Web.woff2") format("woff2"),
+//         url("/asset/font/Alliance-Regular-Web.woff") format("woff");
 //     font-display: swap;
 // }
 
 @font-face {
-    font-family: 'Graphik';
-    font-weight: 400;
-    font-style: italic;
-    src: url('/asset/font/Graphik-RegularItalic-Web.woff2') format('woff2'),
-        url('/asset/font/Graphik-RegularItalic-Web.woff') format('woff');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Graphik';
-    font-weight: 500;
-    src: url('/asset/font/Graphik-Medium-Web.woff2') format('woff2'),
-        url('/asset/font/Graphik-Medium-Web.woff') format('woff');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Graphik";
-    font-weight: 600;
-    src: url("/asset/font/Graphik-Semibold-Web.woff2") format("woff2"),
-        url("/asset/font/Graphik-Semibold-Web.woff") format("woff");
-    font-display: swap;
+  font-family: 'Alliance';
+  font-weight: 600;
+  src: url('/asset/font/AllianceNo1-SemiBold.woff2') format('woff2'),
+    url('/asset/font/AllianceNo1-SemiBold.woff') format('woff');
+  font-display: swap;
 }
 
 // @font-face {
-//     font-family: 'Graphik';
+//     font-family: 'Alliance';
 //     font-weight: 800;
-//     src: url('/asset/font/Graphik-Black-Web.woff2') format('woff2'),
-//         url('/asset/font/Graphik-Black-Web.woff') format('woff');
+//     src: url('/asset/font/AllianceNo1-ExtraBold.woff2') format('woff2'),
+//         url('/asset/font/AllianceNo1-ExtraBold.woff') format('woff');
 //     font-display: swap;
 // }
