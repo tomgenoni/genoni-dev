@@ -112,12 +112,6 @@
 
     p {
       @include atoms(f3, m_f2, lh-title, mb0);
-      font-family: $serif;
-
-      &:before,
-      &:after {
-        @include atoms(fw7);
-      }
 
       &:before {
         content: '“';
@@ -125,7 +119,7 @@
         // Position the hanging quote only above medium.
         @include respond-above($break__medium) {
           position: absolute;
-          left: -0.6em;
+          left: -0.5em;
         }
       }
 
