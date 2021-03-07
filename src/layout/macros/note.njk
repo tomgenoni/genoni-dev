@@ -1,6 +1,6 @@
 {% macro note() %}
-<div class="flex bg-white ba b-gray-300 pt3 ph4 f7 reading">
-    <div class="flex-none mr3">📌</div>
+<div class="flex pt3 ph4 f7 bg-gray-200 mb5">
+    <div class="flex-none mr2">📍</div>
     <div>{{ caller() | md | safe }}</div>
 </div>
 {% endmacro %}

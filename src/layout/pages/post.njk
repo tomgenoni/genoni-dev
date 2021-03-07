@@ -7,15 +7,27 @@
     {% include "partials/common/header.njk" %}
 </div>
 
-
-<div class="wrap pb5">
-    <div class="mb5 mt5 m_mt6">
-        <div class="f8 black-300 fw6 bb b-indigo bw-3 dib mb3 m_mb4 pb1">{{fm.date}}</div>
-        <h1 class="f2 m_f0 lh-solid fw8 mb1 black -ls1">{{fm.title}}</h1>
-        <div class="f3 m_f2 lh-solid fw4 gray m_-ls1 mb5">{{fm.description}}</div>        
+<div class="pb5 wrap">
+    <div class="mb5 mt5 m_mt6 tc">
+        <h1 class="f3 m_f1 lh-solid fw8 mb1 black -ls1">{{fm.title}}</h1>
+        <div class="f4 m_f3 lh-solid fw4 gray m_-ls1 mb3">{{fm.description}}</div>        
+        <div class="f8 bg-gray-200 ph3 pv1 dib br-pill mb3">{{fm.date}}</div>
     </div>        
 
-    <div class="markdown markdown-post">
+    {% if fm.hero %}
+      {{ picture
+          (
+              image=fm.hero.image,
+              alt=fm.hero.alt,
+              ar="1-1",
+              s_ar="8-5",
+              l_ar="2-1",
+              class="stripe-bkg mb5 m_mb6"
+          )
+      }}
+    {% endif %}
+
+    <div class="markdown markdown-post ">
         {{body | safe}}
     </div>         
 </div>
