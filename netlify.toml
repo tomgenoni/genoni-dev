@@ -11,5 +11,3 @@
   [headers.values]
     content-type = "font/woff2"
     cache-control = "public, max-age=31536000"
-[context.production]
-  environment = { NODE_VERSION = "14.15.3" }
