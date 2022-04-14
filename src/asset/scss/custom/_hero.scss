@@ -11,6 +11,7 @@
     }
 
     &-title {
+        max-width: 1250px;
         @include atoms(f2, m_f1);
 
         @include respond-above($break__large) {
