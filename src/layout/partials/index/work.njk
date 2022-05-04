@@ -1,31 +1,30 @@
-
 <div id="work">
-    <ul>
-        {% for entry in work %}
-            <li id="{{entry.basename}}" class="mb6 m_mb7">
-                <div class="mb4 wrap-left">
-                    {% include "partials/index/roll.njk" %}
-                </div>
-                <div class="wrap">
-                    <h2 class="f4 m_f3 fw6 mb3 lh-solid">
-                        {{entry.fm.title}}
-                    </h2>
-                    <div class="markdown reading lh-base">
-                        {{entry.body | safe}}
-                    </div>
-                    {% if entry.fm.links %}
-                        <ol class="f6">
-                            {% for link in entry.fm.links %}
-                                <li>
-                                    <a class="link link-external fw6" href="{{link.url}}">
-                                        {{link.title}}
-                                    </a>
-                                </li>
-                            {% endfor %}
-                        </ol>
-                    {% endif %}
-                </div>
-            </li>
-        {% endfor %}
-    </ul> 
+  <ul>
+    {% for entry in work %}
+      <li id="{{ entry.basename }}" class="mb6 m_mb7">
+        <div class="mb4 wrap-left">
+          {% include "partials/index/roll.njk" %}
+        </div>
+        <div class="wrap">
+          <h2 class="f4 m_f3 fw6 mb3 lh-solid">
+            {{ entry.fm.title }}
+          </h2>
+          <div class="markdown reading lh-base">
+            {{ entry.body | safe }}
+          </div>
+          {% if entry.fm.links %}
+            <ol class="m_flex mt4">
+              {% for link in entry.fm.links %}
+                <li class="mb3 m_mb0 mr2">
+                  <a class="link link-external" href="{{ link.url }}">
+                    {{ link.title }}
+                  </a>
+                </li>
+              {% endfor %}
+            </ol>
+          {% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
 </div>

@@ -1,14 +1,28 @@
 .link,
 .link a {
-    @include atoms(white);
+  @include atoms(white);
 }
 
 .link-inherit {
-    color: inherit;
+  color: inherit;
 }
 
 .link-external {
-    &:after {
-        content: ' →';
-    }
+  border-radius: 999px;
+  padding: 4px 12px 6px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-color: $color__white;
+    transition: border-color 0.2s;
+  }
+
+  &:after {
+    content: ' →';
+    transform: rotate(45deg);
+  }
 }
