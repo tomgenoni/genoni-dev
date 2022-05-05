@@ -1,6 +1,8 @@
 {% macro note() %}
-<div class="flex pt3 ph4 f7 bg-gray-200 mb5">
-    <div class="flex-none mr2">📍</div>
-    <div>{{ caller() | md | safe }}</div>
-</div>
+  <div class="relative">
+    <div class="absolute f4 -top2" style="transform: rotate(14deg); left: 48%;">📍</div>
+    <div class="pb1 pt3 ph4 f7 bg-gray-200 mb5">
+      <div>{{ caller() | md | safe }}</div>
+    </div>
+  </div>
 {% endmacro %}
