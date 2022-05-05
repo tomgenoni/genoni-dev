@@ -1,5 +1,6 @@
 // Usage: yarn screenshot_remote 'https://thumbtack.com'
-// Use with quotes to prevent special character recognition, like &
+// Use with quotes to prevent special character recognition, like '&'
+// Final output size should be 2600x2462
 
 const Pageres = require('pageres');
 const sharp = require('sharp');
@@ -8,7 +9,7 @@ const url = process.argv[3];
 
 (async () => {
   await new Pageres()
-    .src(url, ['1300x1231'], {
+    .src(url, ['1300x1200'], {
       crop: true,
       scale: 2,
       filename: 'pre-chrome',
