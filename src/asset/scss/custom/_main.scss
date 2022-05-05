@@ -16,9 +16,6 @@ body {
 
 .index {
   background: #094367;
-  @include respond-above($break__medium) {
-    background: linear-gradient(211deg, #2a739e 0%, #094367 20%);
-  }
 
   body {
     color: $color__white;
