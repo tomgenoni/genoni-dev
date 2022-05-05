@@ -20,7 +20,7 @@ function init() {
 
 function clean() {
     rm -rf tmp && \
-    echo '✔ clean'
+    echo '✔ clean up'
 }
 
 ### CSS
@@ -113,7 +113,7 @@ function start() {
 ### Build
 
 function build() {
-    init && content && css:prod && copy && minify && sitemap:build && sitemap:copy && clean
+    init && content && css:prod && copy && minify && sitemap:build && clean
 }
 
 ### Sitemap
@@ -122,13 +122,6 @@ function build() {
 function sitemap:build() {
     echo 'sitemap:' && \
     node app/sitemap.js
-    echo '  ✔ created'
-}
-
-# Copies the sitemap into the `dist` directory on build.
-function sitemap:copy() {
-    cp ./src/sitemap.xml ./dist/sitemap.xml
-    echo '  ✔ copied'
 }
 
 # Run a function name in the context of this script

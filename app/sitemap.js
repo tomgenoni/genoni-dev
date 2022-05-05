@@ -4,7 +4,12 @@ const vars = require('./variables');
 // create generator
 const generator = SitemapGenerator(vars.urls.site, {
   stripQuerystring: false,
-  filepath: './src/sitemap.xml',
+  filepath: './dist/sitemap.xml',
+});
+
+// register event listeners
+generator.on('done', () => {
+  console.log('  ✔ created');
 });
 
 // start the crawler
