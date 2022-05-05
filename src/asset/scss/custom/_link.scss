@@ -21,6 +21,7 @@
 
   &:after {
     content: ' →';
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
+    display: inline-block;
   }
 }
