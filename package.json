@@ -34,7 +34,7 @@
     "html-minifier": "^4.0.0",
     "instant.page": "^5.1.0",
     "lazysizes": "^5.2.0",
-    "marked": "^0.8.1",
+    "marked": "^4.0.10",
     "node-minify": "^3.6.0",
     "node-sass": "^4.13.1",
     "nunjucks": "^3.2.1",
