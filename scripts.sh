@@ -120,14 +120,15 @@ function build() {
 
 # Build this manually.
 function sitemap:build() {
+    echo 'sitemap:' && \
     node app/sitemap.js
-    echo '✔ sitemap created'
+    echo '  ✔ created'
 }
 
 # Copies the sitemap into the `dist` directory on build.
 function sitemap:copy() {
     cp ./src/sitemap.xml ./dist/sitemap.xml
-    echo '✔ sitemap copied'
+    echo '  ✔ copied'
 }
 
 # Run a function name in the context of this script
