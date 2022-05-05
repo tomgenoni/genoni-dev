@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://genoni.dev/</loc>
+    <loc>https://www.genoni.dev/</loc>
   </url>
   <url>
-    <loc>https://genoni.dev/write/functional-css.html</loc>
+    <loc>https://www.genoni.dev/index.html</loc>
   </url>
   <url>
-    <loc>https://genoni.dev/write/building-genoni-dev.html</loc>
+    <loc>https://www.genoni.dev/write/inkling.html</loc>
   </url>
   <url>
-    <loc>https://genoni.dev/write/inkling.html</loc>
+    <loc>https://www.genoni.dev/write/design-system-principles.html</loc>
+  </url>
+  <url>
+    <loc>https://www.genoni.dev/write/skills.html</loc>
+  </url>
+  <url>
+    <loc>https://www.genoni.dev/write/building-genoni-dev.html</loc>
+  </url>
+  <url>
+    <loc>https://www.genoni.dev/write/functional-css.html</loc>
   </url>
 </urlset>

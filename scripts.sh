@@ -113,7 +113,7 @@ function start() {
 ### Build
 
 function build() {
-    init && content && css:prod && copy && minify && sitemap:copy && clean
+    init && content && css:prod && copy && minify && sitemap:build && sitemap:copy && clean
 }
 
 ### Sitemap
@@ -121,6 +121,7 @@ function build() {
 # Build this manually.
 function sitemap:build() {
     node app/sitemap.js
+    echo '✔ sitemap created'
 }
 
 # Copies the sitemap into the `dist` directory on build.
