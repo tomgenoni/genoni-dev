@@ -1,43 +1,43 @@
 .hero {
-    height: 70vh;
-    min-height: 400px;
+  height: 70vh;
+  min-height: 400px;
 
-    @include respond-above($break__medium) {
-        height: 40vh;
-    }
+  @include respond-above($break__medium) {
+    height: 40vh;
+  }
+
+  @include respond-above($break__large) {
+    min-height: 600px;
+  }
+
+  &-title {
+    max-width: 1250px;
+    @include atoms(f2, m_f1);
 
     @include respond-above($break__large) {
-        min-height: 600px;
+      font-size: $f0;
+    }
+  }
+
+  &-list {
+    list-style-type: disc;
+
+    @include respond-above($break__medium) {
+      column-count: 2;
+      column-gap: $space__3;
     }
 
-    &-title {
-        max-width: 1250px;
-        @include atoms(f2, m_f1);
-
-        @include respond-above($break__large) {
-            font-size: 54px
-        }
+    li {
+      margin-left: $space__4;
     }
+  }
 
-    &-list {
-        list-style-type: disc;
+  &-illu {
+    display: none;
 
-        @include respond-above($break__medium) {
-            column-count: 2;
-            column-gap: $space__3;
-        }
-
-        li {
-            margin-left: $space__4;
-        }
+    @include respond-above($break__large) {
+      margin-top: -20%;
+      display: block;
     }
-
-    &-illu {
-        display: none;
-
-        @include respond-above($break__large) {
-            margin-top: -20%;
-            display: block;
-        }
-    }
+  }
 }
