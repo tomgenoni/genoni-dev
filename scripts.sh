@@ -27,7 +27,7 @@ function clean() {
 
 function css:scss() {
     echo 'css:'
-    node-sass -q src/asset/scss/root.scss tmp/root.css && \
+    sass -q src/asset/scss/root.scss tmp/root.css && \
     echo '  ✔ scss'
 }
 
