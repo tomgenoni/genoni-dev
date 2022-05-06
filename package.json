@@ -55,5 +55,8 @@
   "bugs": {
     "url": "https://github.com/tomgenoni/genoni-dev/issues"
   },
-  "homepage": "https://github.com/tomgenoni/genoni-dev#readme"
+  "homepage": "https://github.com/tomgenoni/genoni-dev#readme",
+  "engines": {
+    "node": "<17.0.0"
+  }
 }
