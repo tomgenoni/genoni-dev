@@ -1,67 +1,45 @@
-.roll-rail {
-    overflow: hidden;
-    margin-left: -$space__4;
-    margin-right: -$space__4;
+.roll {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: $space__3; // Space between items
+  padding: 0 $space__3;
 
-    @include respond-above($break__medium) {
-        margin-left: calc(-5% - 72px);
-        margin-right: -$space__6;
-    }
+  @include respond-above($break__medium) {
+    gap: $space__4; // Space between items
+    padding: 0 $space__6;
+  }
 
-    @include respond-above($break__xlarge) {
-        margin-right: 0;
-    }
-}
+  @include respond-above($break__xlarge) {
+    padding: 0 7%;
+  }
 
-.roll-wrap {
-    display: flex;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    margin-bottom: -30px; // Cover scrollbar
-
-    @include respond-above($break__medium) {
-        padding-left: calc(5% + 42px);
-    }
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+    appearance: none;
+  }
 }
 
 .roll-pane {
-    display: flex;
-    position: relative;
-    padding-left: $space__4; // Space between items
-    padding-bottom: 30px;
-    width: 84%;
-    min-width: 84%;
+  display: flex;
+  position: relative;
+  width: 84%;
+  min-width: 84%;
 
-    @include respond-above($break__medium) {
-        width: 66%;
-        min-width: 66%;
-    }
+  @include respond-above($break__medium) {
+    width: 66%;
+    min-width: 66%;
+  }
 
-    @include respond-above($break__large) {
-        width: 60%;
-        min-width: 60%;
-    }
-
-    // Hack to make room after the last scrollable item.
-    &:last-child:after {
-        content: ' ';
-        width: $space__4;
-        height: $space__4;
-
-        @include respond-above($break__medium) {
-            width: $space__6;
-            height: $space__6;
-        }
-
-        position: absolute;
-        top: 0;
-        left: 100%;
-    }
+  @include respond-above($break__large) {
+    width: 60%;
+    min-width: 60%;
+  }
 }
 
 .roll-pane-content {
-    width: 100%;
-    height: 100%;
-    border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
 }

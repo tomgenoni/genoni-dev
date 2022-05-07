@@ -1,24 +1,19 @@
-<div class="roll mb3" data-step="0">
-    <div class="roll-rail">
-        <ol class="roll-wrap">
-            {% for roll in entry.fm.roll %}
-                <li class="roll-pane">
-                    <div class="roll-pane-content">
-                        {% set class = 'stripe-bkg ' + roll.class %}
-                        {{ picture
-                            (
-                                image=roll.image,
-                                alt=roll.alt,
-                                placeholder=roll.placeholder,
-                                class=class
-                            )
-                        }}
-                        {% if roll.description %}
-                            <div class="f8 lh-copy mt2 op-8 reading">{{roll.description}}</div>
-                        {% endif %}
-                    </div>
-                </li>
-            {% endfor %}
-        </ol>
-    </div>
-</div>
+<ol class="roll">
+  {% for roll in entry.fm.roll %}
+    <li class="roll-pane">
+      <div class="roll-pane-content">
+        {% set class = 'stripe-bkg ' + roll.class %}
+        {{ picture
+          (
+              image=roll.image,
+              alt=roll.alt,
+              placeholder=roll.placeholder,
+              class=class
+          ) }}
+        {% if roll.description %}
+          <div class="f8 lh-copy mt2 op-8 reading">{{ roll.description }}</div>
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ol>
