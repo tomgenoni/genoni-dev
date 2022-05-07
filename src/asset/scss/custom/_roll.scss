@@ -11,11 +11,13 @@
   }
 
   @include respond-above($break__xlarge) {
-    padding: 0 7%;
+    padding: 0 $wrap__xlarge_padding; // Same as padding in _wrap.scss
   }
 
-  scrollbar-width: none;
+  // Hide scrollbar
+  scrollbar-width: none; // Firefox
   &::-webkit-scrollbar {
+    // Chrome/Edge/Safari
     display: none;
     appearance: none;
   }
@@ -35,6 +37,18 @@
   @include respond-above($break__large) {
     width: 60%;
     min-width: 60%;
+  }
+
+  // Needed by Safari as it ignores the right padding from `.roll` above
+  &:last-child {
+    &:after {
+      content: '';
+      width: $space__3;
+      height: 1px;
+      position: absolute;
+      top: 0;
+      right: -$space__3;
+    }
   }
 }
 

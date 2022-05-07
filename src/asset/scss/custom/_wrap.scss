@@ -4,18 +4,8 @@
 
   @include respond-above($break__xlarge) {
     max-width: none;
-    padding-left: 7%;
-    padding-right: 7%;
-  }
-}
-
-.wrap-left {
-  @include atoms(wrap);
-
-  @include respond-above($break__xlarge) {
-    max-width: none;
-    padding-left: 7%;
-    padding-right: 0;
+    padding-left: $wrap__xlarge_padding;
+    padding-right: $wrap__xlarge_padding;
   }
 }
 
