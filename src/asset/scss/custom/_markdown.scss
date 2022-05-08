@@ -171,8 +171,9 @@
   // Pre
 
   pre {
-    @include atoms(br2, mv4, bg-white, f8, m_f7, ba, b-gray-300);
+    @include atoms(br2, mv4, bg-white, f8, m_f7);
     color: $color__black-300;
+    box-shadow: 0 0 8px rgb(0 0 0 / 10%);
     font-family: 'Source Code Pro', monospace;
     white-space: pre;
     tab-size: 4;
