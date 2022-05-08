@@ -4,26 +4,33 @@
 <div class="wrap">
   {% include "partials/common/header.njk" %}
 </div>
-<div class="pb5 wrap">
+<div class="pb6 m_pb7 wrap">
   <div class="mb4 m_mb5 mt5 m_mt6 m_tc">
-    <h1 class="f3 m_f1 lh-solid fw8 mb1 black m_-ls1">{{ fm.title }}</h1>
-    <div class="f4 m_f3 lh-solid fw4 gray m_-ls1 mb3">{{ fm.description }}</div>
-    <div class="f8 bg-gray-200 ph3 pv1 dib br-pill mb3">{{ fm.date }}</div>
+    <h1 class="f3 m_f1 lh-solid fw8 mb1 black m_-ls1">{{ post.fm.title }}</h1>
+    <div class="f4 m_f3 lh-solid fw4 gray m_-ls1 mb3">{{ post.fm.description }}</div>
+    <div class="f8 bg-gray-300 ph3 pv1 dib br-pill mb3">{{ post.fm.date }}</div>
   </div>
-  {% if fm.hero %}
+  {% if post.fm.hero %}
     {{ picture
-          (
-              image=fm.hero.image,
-              alt=fm.hero.alt,
-              ar="1-1",
-              s_ar="8-5",
-              l_ar="2-1",
-              class="stripe-bkg mb5 m_mb6"
-          ) }}
+      (
+          image=post.fm.hero.image,
+          alt=post.fm.hero.alt,
+          ar="1-1",
+          s_ar="8-5",
+          l_ar="2-1",
+          class="stripe-bkg mb5 m_mb6"
+      ) }}
   {% endif %}
   <div class="markdown markdown-post ">
-    {{ body | safe }}
+    {{ post.body | safe }}
   </div>
 </div>
-{% include "partials/common/footer.njk" %}
-{% include "partials/common/foot.njk" %}
+<div class="bg-blue-800 white pt6">
+  <div class="pb6">
+    {% include "partials/common/write.njk" %}
+  </div>
+  <div class="pb5">
+    {% include "partials/common/footer.njk" %}
+  </div>
+  {% include "partials/common/foot.njk" %}
+</div>

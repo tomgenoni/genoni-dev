@@ -1,21 +1,18 @@
 {% set htmlClass = "index" %}
-
 {% from "../macros/picture.njk" import picture %}
-
 {% include "partials/common/head.njk" %}
-
 <div class="wrap">
-    {% include "partials/common/header.njk" %}
-    {% include "partials/index/hero.njk" %}
+  {% include "partials/common/header.njk" %}
+  {% include "partials/index/hero.njk" %}
 </div>
-
 {% include "partials/index/work.njk" %}
-
 <div class="wrap mb6">
-    <div class="stripe-bkg h1 mb5"></div>
+  <div class="stripe-bkg h1 mb5"></div>
 </div>
-
-{% include "partials/index/write.njk" %}
-
-{% include "partials/common/footer.njk" %}
+<div class="pb6">
+  {% include "partials/common/write.njk" %}
+</div>
+<div class="pb5">
+  {% include "partials/common/footer.njk" %}
+</div>
 {% include "partials/common/foot.njk" %}

@@ -46,11 +46,14 @@ env.addFilter(
 // -----------------------
 
 function buildPages() {
-  var rootTemplate = env.render('pages/index.njk', vars.postData);
+  var rootTemplate = env.render('pages/index.njk', { data: vars.postData });
   writeFile(rootTemplate, './dist/index.html');
 
-  vars.postData.write.forEach((post) => {
-    var postTemplate = env.render('pages/post.njk', post);
+  vars.postData.write.forEach((post, index) => {
+    var postTemplate = env.render('pages/post.njk', {
+      post,
+      data: vars.postData,
+    });
     writeFile(postTemplate, vars.path.dist.write + post.basename + '.html');
   });
 }
@@ -82,7 +85,7 @@ function getContent(files) {
 
 // Get all markdown files
 function init() {
-  glob(vars.path.postGlob, function (er, files) {
+  glob(vars.path.postGlob, function (err, files) {
     getContent(files);
     buildPages();
   });
