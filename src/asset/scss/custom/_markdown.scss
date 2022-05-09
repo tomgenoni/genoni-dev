@@ -161,11 +161,11 @@
   // Code
 
   :not(pre) > code {
-    @include atoms(bg-gray-300, br1);
+    @include atoms(bg-gray-300, br2);
     font-weight: 500;
     font-size: 0.85em;
     font-family: 'Source Code Pro', monospace;
-    padding: 0 4px 2px;
+    padding: 0 8px 2px;
   }
 
   // Pre
