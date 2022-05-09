@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-{% set description = fm.description | default("The portfolio of Tom Genoni, a frontend designer living in San Francisco.") %}
-{% set ogImage = fm.hero.image | default("home-2") %}
+{% set description = post.fm.description | default("The portfolio of Tom Genoni, a frontend designer living in San Francisco.") %}
+{% set ogImage = post.fm.hero.image | default("home-2") %}
 <html lang="en" {% if htmlClass %} class="{{ htmlClass }}" {% endif %}>
   <head>
     <title>
-      {% if fm.title %}
-        {{ fm.title }} •
+      {% if post.fm.title %}
+        {{ post.fm.title }} •
       {% endif %}Tom Genoni • Frontend Designer</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="description" content="{{ description }}"/>
-    <meta
-    name="author" content="Tom Genoni"> {# Open Graph #}
-    <meta property="og:title" content="{% if fm.title %}{{ fm.title }}{% else %}Tom Genoni • Frontend Designer{% endif %}"/>
+    <meta name="author" content="Tom Genoni">
+    <meta property="og:title" content="{% if post.fm.title %}{{ post.fm.title }}{% else %}Tom Genoni • Frontend Designer{% endif %}"/>
     <meta property="og:description" content="{{ description }}"/>
     <meta property="og:image" content="{{ urls.imageKit }}/{{ urls.imageKitCode }}/{{ ogImage }}.jpg?tr=w-1200,ar-1-1"/>
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="1200"/>
-    <meta
-    property="og:type" content="website"/> {# Favicon #}
+    <meta property="og:type" content="website"/>
     <link rel="apple-touch-icon" sizes="180x180" href="/asset/image/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/asset/image/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/asset/image/favicon/favicon-16x16.png">
@@ -27,11 +25,9 @@
     <link rel="shortcut icon" href="/asset/image/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/asset/image/favicon/browserconfig.xml">
-    <meta
-    name="theme-color" content="#ffffff"> {# For image service #}
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="{{ urls.imageKit }}">
-    <link
-    rel="dns-prefetch" href="{{ urls.imageKit }}"> {# For image service #}
+    <link rel="dns-prefetch" href="{{ urls.imageKit }}">
     <link rel="preload" href="/asset/font/AllianceNo1-Regular.woff2" as="font" crossorigin>
     <link rel="preload" href="/asset/font/AllianceNo1-ExtraBold.woff2" as="font" crossorigin>
     <style>
