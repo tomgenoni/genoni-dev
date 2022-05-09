@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {% set description = post.fm.description | default("The portfolio of Tom Genoni, a frontend designer living in San Francisco.") %}
-{% set ogImage = post.fm.hero.image | default("home-2") %}
+{% set ogImage = post.fm.hero.image | default("tiles") %}
 <html lang="en" {% if htmlClass %} class="{{ htmlClass }}" {% endif %}>
   <head>
     <title>
