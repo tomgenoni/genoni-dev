@@ -145,10 +145,10 @@
     }
 
     .credit {
-      @include atoms(f7, black-300, db, pt3, fw6);
+      @include atoms(f7, blue-800, db, pt3, fw6);
 
       &:before {
-        @include atoms(bg-indigo);
+        @include atoms(bg-blue-800);
         content: '';
         height: 2px;
         width: 30px;
@@ -161,7 +161,7 @@
   // Code
 
   :not(pre) > code {
-    @include atoms(bg-gray-200);
+    @include atoms(bg-gray-300, br1);
     font-weight: 500;
     font-size: 0.85em;
     font-family: 'Source Code Pro', monospace;
