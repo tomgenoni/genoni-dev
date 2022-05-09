@@ -1,59 +1,59 @@
 .side-scroll {
-    overflow: hidden;
+  overflow: hidden;
+  margin-left: -$space__3;
+  margin-right: -$space__3;
+
+  @include respond-above($break__large) {
+    overflow: auto;
+  }
+
+  &-wrap {
+    margin-bottom: -30px;
+    padding-left: $space__3;
+
+    @include respond-above($break__medium) {
+      margin-bottom: 0;
+    }
+  }
+
+  &-inner {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
     margin-left: -$space__3;
-    margin-right: -$space__3;
 
-    @include respond-above($break__large) {
-        overflow: auto;
+    @include respond-above($break__medium) {
+      overflow: auto !important;
+      margin-left: -$space__3;
+    }
+  }
+
+  &-item {
+    position: relative;
+    flex: 1;
+    min-width: 90%;
+    scroll-snap-align: start;
+    padding-left: $space__3;
+    padding-bottom: 30px;
+
+    @include respond-above($break__medium) {
+      min-width: auto;
+      padding-bottom: 0;
     }
 
-    &-wrap {
-        margin-bottom: -30px;
-        padding-left: $space__3;
+    &:last-child:after {
+      content: ' ';
+      width: $space__3;
+      height: 1px;
+      position: absolute;
+      top: 0;
+      left: 100%;
 
-        @include respond-above($break__medium) {
-            margin-bottom: 0;
-        }
+      @include respond-above($break__medium) {
+        display: none;
+      }
     }
-
-    &-inner {
-        display: flex;
-        scroll-snap-type: x mandatory;
-        overflow-x: auto;
-        overflow-y: hidden;
-        -webkit-overflow-scrolling: touch;
-        margin-left: -$space__3;
-
-        @include respond-above($break__medium) {
-            overflow: auto !important;
-            margin-left: -$space__3;
-        }
-    }
-
-    &-item {
-        position: relative;
-        flex: 1;
-        min-width: 90%;
-        scroll-snap-align: start;
-        padding-left: $space__3;
-        padding-bottom: 30px;
-
-        @include respond-above($break__medium) {
-            min-width: auto;
-            padding-bottom: 0;
-        }
-
-        &:last-child:after {
-            content: ' ';
-            width: $space__3;
-            height: 1px;
-            position: absolute;
-            top: 0;
-            left: 100%;
-
-            @include respond-above($break__medium) {
-                display: none;
-            }
-        }
-    }
+  }
 }

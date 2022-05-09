@@ -1,101 +1,101 @@
 .ls1 {
-    letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
 }
 
 .ls2 {
-    letter-spacing: 1px;
+  letter-spacing: 1px;
 }
 
 .ls3 {
-    letter-spacing: 1.5px;
+  letter-spacing: 1.5px;
 }
 
 .-ls1 {
-    letter-spacing: -0.5px;
+  letter-spacing: -0.5px;
 }
 
 .-ls2 {
-    letter-spacing: -1px;
+  letter-spacing: -1px;
 }
 
 .-ls3 {
-    letter-spacing: -1.5px;
+  letter-spacing: -1.5px;
 }
 
 @include respond-above($break__small) {
-    .s_ls1 {
-        letter-spacing: 0.5px;
-    }
+  .s_ls1 {
+    letter-spacing: 0.5px;
+  }
 
-    .s_ls2 {
-        letter-spacing: 1px;
-    }
+  .s_ls2 {
+    letter-spacing: 1px;
+  }
 
-    .s_ls3 {
-        letter-spacing: 1.5px;
-    }
+  .s_ls3 {
+    letter-spacing: 1.5px;
+  }
 
-    .s_-ls1 {
-        letter-spacing: -0.5px;
-    }
+  .s_-ls1 {
+    letter-spacing: -0.5px;
+  }
 
-    .s_-ls2 {
-        letter-spacing: -1px;
-    }
+  .s_-ls2 {
+    letter-spacing: -1px;
+  }
 
-    .s_-ls3 {
-        letter-spacing: -1.5px;
-    }
+  .s_-ls3 {
+    letter-spacing: -1.5px;
+  }
 }
 
 @include respond-above($break__medium) {
-    .m_ls1 {
-        letter-spacing: 0.5px;
-    }
+  .m_ls1 {
+    letter-spacing: 0.5px;
+  }
 
-    .m_ls2 {
-        letter-spacing: 1px;
-    }
+  .m_ls2 {
+    letter-spacing: 1px;
+  }
 
-    .m_ls3 {
-        letter-spacing: 1.5px;
-    }
+  .m_ls3 {
+    letter-spacing: 1.5px;
+  }
 
-    .m_-ls1 {
-        letter-spacing: -0.5px;
-    }
+  .m_-ls1 {
+    letter-spacing: -0.5px;
+  }
 
-    .m_-ls2 {
-        letter-spacing: -1px;
-    }
+  .m_-ls2 {
+    letter-spacing: -1px;
+  }
 
-    .m_-ls3 {
-        letter-spacing: -1.5px;
-    }
+  .m_-ls3 {
+    letter-spacing: -1.5px;
+  }
 }
 
 @include respond-above($break__large) {
-    .l_ls1 {
-        letter-spacing: 0.5px;
-    }
+  .l_ls1 {
+    letter-spacing: 0.5px;
+  }
 
-    .l_ls2 {
-        letter-spacing: 1px;
-    }
+  .l_ls2 {
+    letter-spacing: 1px;
+  }
 
-    .l_ls3 {
-        letter-spacing: 1.5px;
-    }
+  .l_ls3 {
+    letter-spacing: 1.5px;
+  }
 
-    .l_-ls1 {
-        letter-spacing: -0.5px;
-    }
+  .l_-ls1 {
+    letter-spacing: -0.5px;
+  }
 
-    .l_-ls2 {
-        letter-spacing: -1px;
-    }
+  .l_-ls2 {
+    letter-spacing: -1px;
+  }
 
-    .l_-ls3 {
-        letter-spacing: -1.5px;
-    }
+  .l_-ls3 {
+    letter-spacing: -1.5px;
+  }
 }

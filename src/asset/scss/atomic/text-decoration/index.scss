@@ -1,53 +1,53 @@
 .strike {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .no-underline {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 @include respond-above($break__small) {
-    .s_strike {
-        text-decoration: line-through;
-    }
+  .s_strike {
+    text-decoration: line-through;
+  }
 
-    .s_underline {
-        text-decoration: underline;
-    }
+  .s_underline {
+    text-decoration: underline;
+  }
 
-    .s_no-underline {
-        text-decoration: none;
-    }
+  .s_no-underline {
+    text-decoration: none;
+  }
 }
 
 @include respond-above($break__medium) {
-    .m_strike {
-        text-decoration: line-through;
-    }
+  .m_strike {
+    text-decoration: line-through;
+  }
 
-    .m_underline {
-        text-decoration: underline;
-    }
+  .m_underline {
+    text-decoration: underline;
+  }
 
-    .m_no-underline {
-        text-decoration: none;
-    }
+  .m_no-underline {
+    text-decoration: none;
+  }
 }
 
 @include respond-above($break__large) {
-    .l_strike {
-        text-decoration: line-through;
-    }
+  .l_strike {
+    text-decoration: line-through;
+  }
 
-    .l_underline {
-        text-decoration: underline;
-    }
+  .l_underline {
+    text-decoration: underline;
+  }
 
-    .l_no-underline {
-        text-decoration: none;
-    }
+  .l_no-underline {
+    text-decoration: none;
+  }
 }

@@ -1,14 +1,14 @@
 // Box sizing
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    // Nesting because purgecss v2+ is removing *:before/after rules only on Netlify builds.
-    *,
-    *:before,
-    *:after {
-        box-sizing: inherit;
-    }
+  // Nesting because purgecss v2+ is removing *:before/after rules only on Netlify builds.
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
 }
 
 // Meyer reset
@@ -95,12 +95,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -116,56 +116,56 @@ main,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
 /* HTML5 hidden-attribute fix for newer browsers */
 *[hidden] {
-    display: none;
+  display: none;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+  content: '';
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 // Extras
 
 img,
 picture {
-    display: block;
-    max-width: 100%;
-    width: 100%;
+  display: block;
+  max-width: 100%;
+  width: 100%;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 b,
 strong {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 i,
 em {
-    font-style: italic;
+  font-style: italic;
 }

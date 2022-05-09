@@ -1,125 +1,125 @@
 .ba {
-    border-style: solid;
-    border-width: 1px;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .bt {
-    border-top-style: solid;
-    border-top-width: 1px;
+  border-top-style: solid;
+  border-top-width: 1px;
 }
 
 .br {
-    border-right-style: solid;
-    border-right-width: 1px;
+  border-right-style: solid;
+  border-right-width: 1px;
 }
 
 .bb {
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
 }
 
 .bl {
-    border-left-style: solid;
-    border-left-width: 1px;
+  border-left-style: solid;
+  border-left-width: 1px;
 }
 
 .bn {
-    border-style: none;
-    border-width: 0;
+  border-style: none;
+  border-width: 0;
 }
 
 @include respond-above($break__small) {
-    .s_ba {
-        border-style: solid;
-        border-width: 1px;
-    }
+  .s_ba {
+    border-style: solid;
+    border-width: 1px;
+  }
 
-    .s_bt {
-        border-top-style: solid;
-        border-top-width: 1px;
-    }
+  .s_bt {
+    border-top-style: solid;
+    border-top-width: 1px;
+  }
 
-    .s_br {
-        border-right-style: solid;
-        border-right-width: 1px;
-    }
+  .s_br {
+    border-right-style: solid;
+    border-right-width: 1px;
+  }
 
-    .s_bb {
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-    }
+  .s_bb {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+  }
 
-    .s_bl {
-        border-left-style: solid;
-        border-left-width: 1px;
-    }
+  .s_bl {
+    border-left-style: solid;
+    border-left-width: 1px;
+  }
 
-    .s_bn {
-        border-style: none;
-        border-width: 0;
-    }
+  .s_bn {
+    border-style: none;
+    border-width: 0;
+  }
 }
 
 @include respond-above($break__medium) {
-    .m_ba {
-        border-style: solid;
-        border-width: 1px;
-    }
+  .m_ba {
+    border-style: solid;
+    border-width: 1px;
+  }
 
-    .m_bt {
-        border-top-style: solid;
-        border-top-width: 1px;
-    }
+  .m_bt {
+    border-top-style: solid;
+    border-top-width: 1px;
+  }
 
-    .m_br {
-        border-right-style: solid;
-        border-right-width: 1px;
-    }
+  .m_br {
+    border-right-style: solid;
+    border-right-width: 1px;
+  }
 
-    .m_bb {
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-    }
+  .m_bb {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+  }
 
-    .m_bl {
-        border-left-style: solid;
-        border-left-width: 1px;
-    }
+  .m_bl {
+    border-left-style: solid;
+    border-left-width: 1px;
+  }
 
-    .m_bn {
-        border-style: none;
-        border-width: 0;
-    }
+  .m_bn {
+    border-style: none;
+    border-width: 0;
+  }
 }
 
 @include respond-above($break__large) {
-    .l_ba {
-        border-style: solid;
-        border-width: 1px;
-    }
+  .l_ba {
+    border-style: solid;
+    border-width: 1px;
+  }
 
-    .l_bt {
-        border-top-style: solid;
-        border-top-width: 1px;
-    }
+  .l_bt {
+    border-top-style: solid;
+    border-top-width: 1px;
+  }
 
-    .l_br {
-        border-right-style: solid;
-        border-right-width: 1px;
-    }
+  .l_br {
+    border-right-style: solid;
+    border-right-width: 1px;
+  }
 
-    .l_bb {
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
-    }
+  .l_bb {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+  }
 
-    .l_bl {
-        border-left-style: solid;
-        border-left-width: 1px;
-    }
+  .l_bl {
+    border-left-style: solid;
+    border-left-width: 1px;
+  }
 
-    .l_bn {
-        border-style: none;
-        border-width: 0;
-    }
+  .l_bn {
+    border-style: none;
+    border-width: 0;
+  }
 }

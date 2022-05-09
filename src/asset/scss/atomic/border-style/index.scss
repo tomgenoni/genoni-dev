@@ -1,69 +1,69 @@
 .b-dotted {
-    border-style: dotted;
+  border-style: dotted;
 }
 
 .b-dashed {
-    border-style: dashed;
+  border-style: dashed;
 }
 
 .b-solid {
-    border-style: solid;
+  border-style: solid;
 }
 
 .b-none {
-    border-style: none;
+  border-style: none;
 }
 
 @include respond-above($break__small) {
-    .s_b-dotted {
-        border-style: dotted;
-    }
+  .s_b-dotted {
+    border-style: dotted;
+  }
 
-    .s_b-dashed {
-        border-style: dashed;
-    }
+  .s_b-dashed {
+    border-style: dashed;
+  }
 
-    .s_b-solid {
-        border-style: solid;
-    }
+  .s_b-solid {
+    border-style: solid;
+  }
 
-    .s_b-none {
-        border-style: none;
-    }
+  .s_b-none {
+    border-style: none;
+  }
 }
 
 @include respond-above($break__medium) {
-    .m_b-dotted {
-        border-style: dotted;
-    }
+  .m_b-dotted {
+    border-style: dotted;
+  }
 
-    .m_b-dashed {
-        border-style: dashed;
-    }
+  .m_b-dashed {
+    border-style: dashed;
+  }
 
-    .m_b-solid {
-        border-style: solid;
-    }
+  .m_b-solid {
+    border-style: solid;
+  }
 
-    .m_b-none {
-        border-style: none;
-    }
+  .m_b-none {
+    border-style: none;
+  }
 }
 
 @include respond-above($break__large) {
-    .l_b-dotted {
-        border-style: dotted;
-    }
+  .l_b-dotted {
+    border-style: dotted;
+  }
 
-    .l_b-dashed {
-        border-style: dashed;
-    }
+  .l_b-dashed {
+    border-style: dashed;
+  }
 
-    .l_b-solid {
-        border-style: solid;
-    }
+  .l_b-solid {
+    border-style: solid;
+  }
 
-    .l_b-none {
-        border-style: none;
-    }
+  .l_b-none {
+    border-style: none;
+  }
 }

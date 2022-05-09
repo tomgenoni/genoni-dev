@@ -1,37 +1,37 @@
 .content-box {
-    box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .border-box {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @include respond-above($break__small) {
-    .s_content-box {
-        box-sizing: content-box;
-    }
+  .s_content-box {
+    box-sizing: content-box;
+  }
 
-    .s_border-box {
-        box-sizing: border-box;
-    }
+  .s_border-box {
+    box-sizing: border-box;
+  }
 }
 
 @include respond-above($break__medium) {
-    .m_content-box {
-        box-sizing: content-box;
-    }
+  .m_content-box {
+    box-sizing: content-box;
+  }
 
-    .m_border-box {
-        box-sizing: border-box;
-    }
+  .m_border-box {
+    box-sizing: border-box;
+  }
 }
 
 @include respond-above($break__large) {
-    .l_content-box {
-        box-sizing: content-box;
-    }
+  .l_content-box {
+    box-sizing: content-box;
+  }
 
-    .l_border-box {
-        box-sizing: border-box;
-    }
+  .l_border-box {
+    box-sizing: border-box;
+  }
 }

@@ -1,201 +1,201 @@
 .dn {
-    display: none;
+  display: none;
 }
 
 .di {
-    display: inline;
+  display: inline;
 }
 
 .db {
-    display: block;
+  display: block;
 }
 
 .dib {
-    display: inline-block;
+  display: inline-block;
 }
 
 .dit {
-    display: inline-table;
+  display: inline-table;
 }
 
 .dt {
-    display: table;
+  display: table;
 }
 
 .dtc {
-    display: table-cell;
+  display: table-cell;
 }
 
 .dt-row {
-    display: table-row;
+  display: table-row;
 }
 
 .dt-row-group {
-    display: table-row-group;
+  display: table-row-group;
 }
 
 .dt-column {
-    display: table-column;
+  display: table-column;
 }
 
 .dt-column-group {
-    display: table-column-group;
+  display: table-column-group;
 }
 
 .dt-fixed {
-    table-layout: fixed;
-    width: 100%;
+  table-layout: fixed;
+  width: 100%;
 }
 
 @include respond-above($break__small) {
-    .s_dn {
-        display: none;
-    }
+  .s_dn {
+    display: none;
+  }
 
-    .s_di {
-        display: inline;
-    }
+  .s_di {
+    display: inline;
+  }
 
-    .s_db {
-        display: block;
-    }
+  .s_db {
+    display: block;
+  }
 
-    .s_dib {
-        display: inline-block;
-    }
+  .s_dib {
+    display: inline-block;
+  }
 
-    .s_dit {
-        display: inline-table;
-    }
+  .s_dit {
+    display: inline-table;
+  }
 
-    .s_dt {
-        display: table;
-    }
+  .s_dt {
+    display: table;
+  }
 
-    .s_dtc {
-        display: table-cell;
-    }
+  .s_dtc {
+    display: table-cell;
+  }
 
-    .s_dt-row {
-        display: table-row;
-    }
+  .s_dt-row {
+    display: table-row;
+  }
 
-    .s_dt-row-group {
-        display: table-row-group;
-    }
+  .s_dt-row-group {
+    display: table-row-group;
+  }
 
-    .s_dt-column {
-        display: table-column;
-    }
+  .s_dt-column {
+    display: table-column;
+  }
 
-    .s_dt-column-group {
-        display: table-column-group;
-    }
+  .s_dt-column-group {
+    display: table-column-group;
+  }
 
-    .s_dt-fixed {
-        table-layout: fixed;
-        width: 100%;
-    }
+  .s_dt-fixed {
+    table-layout: fixed;
+    width: 100%;
+  }
 }
 
 @include respond-above($break__medium) {
-    .m_dn {
-        display: none;
-    }
+  .m_dn {
+    display: none;
+  }
 
-    .m_di {
-        display: inline;
-    }
+  .m_di {
+    display: inline;
+  }
 
-    .m_db {
-        display: block;
-    }
+  .m_db {
+    display: block;
+  }
 
-    .m_dib {
-        display: inline-block;
-    }
+  .m_dib {
+    display: inline-block;
+  }
 
-    .m_dit {
-        display: inline-table;
-    }
+  .m_dit {
+    display: inline-table;
+  }
 
-    .m_dt {
-        display: table;
-    }
+  .m_dt {
+    display: table;
+  }
 
-    .m_dtc {
-        display: table-cell;
-    }
+  .m_dtc {
+    display: table-cell;
+  }
 
-    .m_dt-row {
-        display: table-row;
-    }
+  .m_dt-row {
+    display: table-row;
+  }
 
-    .m_dt-row-group {
-        display: table-row-group;
-    }
+  .m_dt-row-group {
+    display: table-row-group;
+  }
 
-    .m_dt-column {
-        display: table-column;
-    }
+  .m_dt-column {
+    display: table-column;
+  }
 
-    .m_dt-column-group {
-        display: table-column-group;
-    }
+  .m_dt-column-group {
+    display: table-column-group;
+  }
 
-    .m_dt-fixed {
-        table-layout: fixed;
-        width: 100%;
-    }
+  .m_dt-fixed {
+    table-layout: fixed;
+    width: 100%;
+  }
 }
 
 @include respond-above($break__large) {
-    .l_dn {
-        display: none;
-    }
+  .l_dn {
+    display: none;
+  }
 
-    .l_di {
-        display: inline;
-    }
+  .l_di {
+    display: inline;
+  }
 
-    .l_db {
-        display: block;
-    }
+  .l_db {
+    display: block;
+  }
 
-    .l_dib {
-        display: inline-block;
-    }
+  .l_dib {
+    display: inline-block;
+  }
 
-    .l_dit {
-        display: inline-table;
-    }
+  .l_dit {
+    display: inline-table;
+  }
 
-    .l_dt {
-        display: table;
-    }
+  .l_dt {
+    display: table;
+  }
 
-    .l_dtc {
-        display: table-cell;
-    }
+  .l_dtc {
+    display: table-cell;
+  }
 
-    .l_dt-row {
-        display: table-row;
-    }
+  .l_dt-row {
+    display: table-row;
+  }
 
-    .l_dt-row-group {
-        display: table-row-group;
-    }
+  .l_dt-row-group {
+    display: table-row-group;
+  }
 
-    .l_dt-column {
-        display: table-column;
-    }
+  .l_dt-column {
+    display: table-column;
+  }
 
-    .l_dt-column-group {
-        display: table-column-group;
-    }
+  .l_dt-column-group {
+    display: table-column-group;
+  }
 
-    .l_dt-fixed {
-        table-layout: fixed;
-        width: 100%;
-    }
+  .l_dt-fixed {
+    table-layout: fixed;
+    width: 100%;
+  }
 }

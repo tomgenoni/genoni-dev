@@ -1,69 +1,69 @@
 .ttc {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .ttl {
-    text-transform: lowercase;
+  text-transform: lowercase;
 }
 
 .ttu {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .ttn {
-    text-transform: none;
+  text-transform: none;
 }
 
 @include respond-above($break__small) {
-    .s_ttc {
-        text-transform: capitalize;
-    }
+  .s_ttc {
+    text-transform: capitalize;
+  }
 
-    .s_ttl {
-        text-transform: lowercase;
-    }
+  .s_ttl {
+    text-transform: lowercase;
+  }
 
-    .s_ttu {
-        text-transform: uppercase;
-    }
+  .s_ttu {
+    text-transform: uppercase;
+  }
 
-    .s_ttn {
-        text-transform: none;
-    }
+  .s_ttn {
+    text-transform: none;
+  }
 }
 
 @include respond-above($break__medium) {
-    .m_ttc {
-        text-transform: capitalize;
-    }
+  .m_ttc {
+    text-transform: capitalize;
+  }
 
-    .m_ttl {
-        text-transform: lowercase;
-    }
+  .m_ttl {
+    text-transform: lowercase;
+  }
 
-    .m_ttu {
-        text-transform: uppercase;
-    }
+  .m_ttu {
+    text-transform: uppercase;
+  }
 
-    .m_ttn {
-        text-transform: none;
-    }
+  .m_ttn {
+    text-transform: none;
+  }
 }
 
 @include respond-above($break__large) {
-    .l_ttc {
-        text-transform: capitalize;
-    }
+  .l_ttc {
+    text-transform: capitalize;
+  }
 
-    .l_ttl {
-        text-transform: lowercase;
-    }
+  .l_ttl {
+    text-transform: lowercase;
+  }
 
-    .l_ttu {
-        text-transform: uppercase;
-    }
+  .l_ttu {
+    text-transform: uppercase;
+  }
 
-    .l_ttn {
-        text-transform: none;
-    }
+  .l_ttn {
+    text-transform: none;
+  }
 }

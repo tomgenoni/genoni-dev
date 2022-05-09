@@ -1,165 +1,165 @@
 .f0 {
-    font-size: $f0;
+  font-size: $f0;
 }
 
 .f1 {
-    font-size: $f1;
+  font-size: $f1;
 }
 
 .f2 {
-    font-size: $f2;
+  font-size: $f2;
 }
 
 .f3 {
-    font-size: $f3;
+  font-size: $f3;
 }
 
 .f4 {
-    font-size: $f4;
+  font-size: $f4;
 }
 
 .f5 {
-    font-size: $f5;
+  font-size: $f5;
 }
 
 .f6 {
-    font-size: $f6;
+  font-size: $f6;
 }
 
 .f7 {
-    font-size: $f7;
+  font-size: $f7;
 }
 
 .f8 {
-    font-size: $f8;
+  font-size: $f8;
 }
 
 .f9 {
-    font-size: $f9;
+  font-size: $f9;
 }
 
 @include respond-above($break__small) {
-    .s_f0 {
-        font-size: $f0;
-    }
+  .s_f0 {
+    font-size: $f0;
+  }
 
-    .s_f1 {
-        font-size: $f1;
-    }
+  .s_f1 {
+    font-size: $f1;
+  }
 
-    .s_f2 {
-        font-size: $f2;
-    }
+  .s_f2 {
+    font-size: $f2;
+  }
 
-    .s_f3 {
-        font-size: $f3;
-    }
+  .s_f3 {
+    font-size: $f3;
+  }
 
-    .s_f4 {
-        font-size: $f4;
-    }
+  .s_f4 {
+    font-size: $f4;
+  }
 
-    .s_f5 {
-        font-size: $f5;
-    }
+  .s_f5 {
+    font-size: $f5;
+  }
 
-    .s_f6 {
-        font-size: $f6;
-    }
+  .s_f6 {
+    font-size: $f6;
+  }
 
-    .s_f7 {
-        font-size: $f7;
-    }
+  .s_f7 {
+    font-size: $f7;
+  }
 
-    .s_f8 {
-        font-size: $f8;
-    }
+  .s_f8 {
+    font-size: $f8;
+  }
 
-    .s_f9 {
-        font-size: $f9;
-    }
+  .s_f9 {
+    font-size: $f9;
+  }
 }
 
 @include respond-above($break__medium) {
-    .m_f0 {
-        font-size: $f0;
-    }
+  .m_f0 {
+    font-size: $f0;
+  }
 
-    .m_f1 {
-        font-size: $f1;
-    }
+  .m_f1 {
+    font-size: $f1;
+  }
 
-    .m_f2 {
-        font-size: $f2;
-    }
+  .m_f2 {
+    font-size: $f2;
+  }
 
-    .m_f3 {
-        font-size: $f3;
-    }
+  .m_f3 {
+    font-size: $f3;
+  }
 
-    .m_f4 {
-        font-size: $f4;
-    }
+  .m_f4 {
+    font-size: $f4;
+  }
 
-    .m_f5 {
-        font-size: $f5;
-    }
+  .m_f5 {
+    font-size: $f5;
+  }
 
-    .m_f6 {
-        font-size: $f6;
-    }
+  .m_f6 {
+    font-size: $f6;
+  }
 
-    .m_f7 {
-        font-size: $f7;
-    }
+  .m_f7 {
+    font-size: $f7;
+  }
 
-    .m_f8 {
-        font-size: $f8;
-    }
+  .m_f8 {
+    font-size: $f8;
+  }
 
-    .m_f9 {
-        font-size: $f9;
-    }
+  .m_f9 {
+    font-size: $f9;
+  }
 }
 
 @include respond-above($break__large) {
-    .l_f0 {
-        font-size: $f0;
-    }
+  .l_f0 {
+    font-size: $f0;
+  }
 
-    .l_f1 {
-        font-size: $f1;
-    }
+  .l_f1 {
+    font-size: $f1;
+  }
 
-    .l_f2 {
-        font-size: $f2;
-    }
+  .l_f2 {
+    font-size: $f2;
+  }
 
-    .l_f3 {
-        font-size: $f3;
-    }
+  .l_f3 {
+    font-size: $f3;
+  }
 
-    .l_f4 {
-        font-size: $f4;
-    }
+  .l_f4 {
+    font-size: $f4;
+  }
 
-    .l_f5 {
-        font-size: $f5;
-    }
+  .l_f5 {
+    font-size: $f5;
+  }
 
-    .l_f6 {
-        font-size: $f6;
-    }
+  .l_f6 {
+    font-size: $f6;
+  }
 
-    .l_f7 {
-        font-size: $f7;
-    }
+  .l_f7 {
+    font-size: $f7;
+  }
 
-    .l_f8 {
-        font-size: $f8;
-    }
+  .l_f8 {
+    font-size: $f8;
+  }
 
-    .l_f9 {
-        font-size: $f9;
-    }
+  .l_f9 {
+    font-size: $f9;
+  }
 }

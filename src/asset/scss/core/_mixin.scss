@@ -1,25 +1,25 @@
 // Breakpoints
 @mixin respond-between($min-width, $max-width) {
-    @media (min-width: $min-width + 1) and (max-width: $max-width) {
-        @content;
-    }
+  @media (min-width: $min-width + 1) and (max-width: $max-width) {
+    @content;
+  }
 }
 
 @mixin respond-above($width) {
-    @media (min-width: $width + 1) {
-        @content;
-    }
+  @media (min-width: $width + 1) {
+    @content;
+  }
 }
 
 @mixin respond-below($width) {
-    @media (max-width: $width) {
-        @content;
-    }
+  @media (max-width: $width) {
+    @content;
+  }
 }
 
 // Compose using Atomic classes
 @mixin atoms($classes...) {
-    @each $class in $classes {
-        @extend .#{$class};
-    }
+  @each $class in $classes {
+    @extend .#{$class};
+  }
 }

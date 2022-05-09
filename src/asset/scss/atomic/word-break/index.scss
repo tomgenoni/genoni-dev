@@ -1,53 +1,53 @@
 .word-normal {
-    word-break: normal;
+  word-break: normal;
 }
 
 .word-wrap {
-    word-break: break-all;
+  word-break: break-all;
 }
 
 .word-nowrap {
-    word-break: keep-all;
+  word-break: keep-all;
 }
 
 @include respond-above($break__small) {
-    .s_word-normal {
-        word-break: normal;
-    }
+  .s_word-normal {
+    word-break: normal;
+  }
 
-    .s_word-wrap {
-        word-break: break-all;
-    }
+  .s_word-wrap {
+    word-break: break-all;
+  }
 
-    .s_word-nowrap {
-        word-break: keep-all;
-    }
+  .s_word-nowrap {
+    word-break: keep-all;
+  }
 }
 
 @include respond-above($break__medium) {
-    .m_word-normal {
-        word-break: normal;
-    }
+  .m_word-normal {
+    word-break: normal;
+  }
 
-    .m_word-wrap {
-        word-break: break-all;
-    }
+  .m_word-wrap {
+    word-break: break-all;
+  }
 
-    .m_word-nowrap {
-        word-break: keep-all;
-    }
+  .m_word-nowrap {
+    word-break: keep-all;
+  }
 }
 
 @include respond-above($break__large) {
-    .l_word-normal {
-        word-break: normal;
-    }
+  .l_word-normal {
+    word-break: normal;
+  }
 
-    .l_word-wrap {
-        word-break: break-all;
-    }
+  .l_word-wrap {
+    word-break: break-all;
+  }
 
-    .l_word-nowrap {
-        word-break: keep-all;
-    }
+  .l_word-nowrap {
+    word-break: keep-all;
+  }
 }
