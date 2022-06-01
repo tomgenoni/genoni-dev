@@ -43,7 +43,7 @@
     "prismjs": "^1.15.0",
     "purgecss": "^2.0.6",
     "sass": "^1.51.0",
-    "sharp": "^0.30.4",
+    "sharp": "^0.30.5",
     "sitemap-generator": "^8.4.2"
   },
   "repository": {
