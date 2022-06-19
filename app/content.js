@@ -45,22 +45,22 @@ env.addFilter(
 // Functions
 // -----------------------
 
-function buildPages() {
-  var rootTemplate = env.render('pages/index.njk', { data: vars.postData });
-  writeFile(rootTemplate, './dist/index.html');
+// function buildPages() {
+//   var rootTemplate = env.render('pages/index.njk', { data: vars.postData });
+//   writeFile(rootTemplate, './dist/index.html');
 
-  vars.postData.write.forEach((post, index) => {
-    var postTemplate = env.render('pages/post.njk', {
-      post,
-      data: vars.postData,
-    });
-    writeFile(postTemplate, vars.path.dist.write + post.basename + '.html');
-  });
-}
+//   vars.postData.write.forEach((post, index) => {
+//     var postTemplate = env.render('pages/post.njk', {
+//       post,
+//       data: vars.postData,
+//     });
+//     writeFile(postTemplate, vars.path.dist.write + post.basename + '.html');
+//   });
+// }
 
-function writeFile(inputFile, distFile) {
-  fs.outputFile(distFile, inputFile);
-}
+// function writeFile(inputFile, distFile) {
+//   fs.outputFile(distFile, inputFile);
+// }
 
 // Get data from markdown files
 function getContent(files) {
