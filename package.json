@@ -37,7 +37,7 @@
     "lazysizes": "^5.2.0",
     "marked": "^4.0.15",
     "node-minify": "^3.6.0",
-    "nunjucks": "^3.2.1",
+    "nunjucks": "^3.2.4",
     "pageres": "^5.2.0",
     "postcss-cli": "^7.1.0",
     "prismjs": "^1.15.0",
