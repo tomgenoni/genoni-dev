@@ -23,6 +23,6 @@ module.exports = {
   urls: {
     site: 'https://genoni.dev',
     imageKit: 'https://ik.imagekit.io',
-    imageKitCode: 'kdzcwco6qw',
+    imageKitCode: 'kdzcwco6qw/genoni-dev',
   },
 };
