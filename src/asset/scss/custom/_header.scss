@@ -1,9 +1,16 @@
 header {
-  a {
+  a,
+  .link {
     color: inherit;
   }
 }
 
 .index header a {
   color: $color__white;
+}
+
+.post {
+  .link-external {
+    background: $color__gray-300;
+  }
 }
