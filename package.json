@@ -57,6 +57,6 @@
   },
   "homepage": "https://github.com/tomgenoni/genoni-dev#readme",
   "engines": {
-    "node": "<17.0.0"
+    "node": "18.x"
   }
 }
