@@ -113,7 +113,7 @@ function start() {
 ### Build
 
 function build() {
-    init && content && css:prod && copy && minify && sitemap:build && clean
+    init && content && css:prod && copy && minify && clean
 }
 
 ### Sitemap
