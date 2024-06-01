@@ -2,19 +2,21 @@
 // Use with quotes to prevent special character recognition, like '&'
 // Final output size should be 2600x2462
 
-const Pageres = require('pageres');
 const sharp = require('sharp');
 
 const url = process.argv[3];
 
 (async () => {
-  await new Pageres()
-    .src(url, ['1300x1200'], {
+  // Dynamically import pageres
+  const { default: Pageres } = await import('pageres');
+
+  await new Pageres({ delay: 5, launchOptions: 'new' })
+    .source(url, ['1300x1200'], {
       crop: true,
       scale: 2,
       filename: 'pre-chrome',
     })
-    .dest('./tmp')
+    .destination('./tmp')
     .run();
 
   sharp('./tmp/pre-chrome.png')
@@ -41,5 +43,11 @@ const url = process.argv[3];
     .jpeg({
       quality: 100,
     })
-    .toFile('./tmp/post-chrome.jpg', (err, info) => {});
+    .toFile('./tmp/post-chrome.jpg', (err, info) => {
+      if (err) {
+        console.error('Error creating the screenshot:', err);
+      } else {
+        console.log('Screenshot saved successfully:', info);
+      }
+    });
 })();
