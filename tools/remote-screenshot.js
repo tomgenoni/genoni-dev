@@ -10,8 +10,11 @@ const url = process.argv[3];
   // Dynamically import pageres
   const { default: Pageres } = await import('pageres');
 
-  await new Pageres({ delay: 5, launchOptions: 'new' })
-    .source(url, ['1300x1200'], {
+  await new Pageres({
+    delay: 5,
+    launchOptions: { headless: 'new' },
+  })
+    .source(url, ['1400x1292'], {
       crop: true,
       scale: 2,
       filename: 'pre-chrome',
